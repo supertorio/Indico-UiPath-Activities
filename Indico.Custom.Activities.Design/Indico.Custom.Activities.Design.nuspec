@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$title$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
+    <projectUrl>https://indico.io/blog/docs/</projectUrl>
+    <description>$description$</description>
+    <copyright>2019</copyright>
+    <tags>indico machinelearning AI sentiment</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
+
