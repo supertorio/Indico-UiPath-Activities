@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Indico.Custom.Models;
 using Indico.Custom.Properties;
 
 namespace Indico.Custom
@@ -17,7 +18,7 @@ namespace Indico.Custom
         private HttpClient Client { get; set; }
         private string APIKey { get; set; }
         private string URL { get; }
-
+        private CustomCollectionService collectionService;
         #endregion
 
 
@@ -32,6 +33,8 @@ namespace Indico.Custom
             APIKey = apiKey;
             URL = indicoAPIURL;
             CreateClient();
+
+            collectionService = new CustomCollectionService(Client, APIKey);
         }
 
         // Once authentication is complete, creates a reusable HTTP Client
@@ -62,9 +65,13 @@ namespace Indico.Custom
 
         #region Action Calls
 
-        public Task<int> SumValues(int firstValue, int secondValue)
+        /// <summary>
+        /// Calls the list collections endpoint
+        /// </summary>
+        /// <returns>Async Task Reponse Encapsulating the Collections Response</returns>
+        public async Task<CollectionsResponse> GetCollections()
         {
-            return Task.FromResult(firstValue + secondValue);
+            return await collectionService.GetCollectionsList();
         }
 
         #endregion

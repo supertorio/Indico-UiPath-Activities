@@ -50,13 +50,13 @@
     <Compile Include="..\Indico.CustomAssemblyInfo.cs">
       <Link>Properties\Indico.CustomAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Designers\ChildActivityDesigner.xaml.cs">
-      <DependentUpon>ChildActivityDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Controls\FilePathControl.xaml.cs">
       <DependentUpon>FilePathControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ActivityIconConverter.cs" />
+    <Compile Include="Designers\ListCollectionsDesigner.xaml.cs">
+      <DependentUpon>ListCollectionsDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\ParentScopeDesigner.xaml.cs">
       <DependentUpon>ParentScopeDesigner.xaml</DependentUpon>
     </Compile>
@@ -78,13 +78,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Designers\ChildActivityDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Controls\FilePathControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\ListCollectionsDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Designers\ParentScopeDesigner.xaml">
       <SubType>Designer</SubType>
