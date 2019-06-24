@@ -149,44 +149,28 @@
     <value>Please provide a value for {0}</value>
     <comment>validation error</comment>
   </data>
-  <data name="ChildActivityDescription" xml:space="preserve">
-    <value>The child activity that goes inside the scope.</value>
-    <comment>description</comment>
-  </data>
-  <data name="ChildActivityDisplayName" xml:space="preserve">
-    <value>Child Activity</value>
-    <comment>display name</comment>
-  </data>
-  <data name="ChildActivityFirstValueDescription" xml:space="preserve">
-    <value>The first value that you want to sum.</value>
-    <comment>description</comment>
-  </data>
-  <data name="ChildActivityFirstValueDisplayName" xml:space="preserve">
-    <value>FirstValue</value>
-    <comment>display name</comment>
-  </data>
-  <data name="ChildActivitySecondValueDescription" xml:space="preserve">
-    <value>The second value you want to sum.</value>
-    <comment>description</comment>
-  </data>
-  <data name="ChildActivitySecondValueDisplayName" xml:space="preserve">
-    <value>SecondValue</value>
-    <comment>display name</comment>
-  </data>
-  <data name="ChildActivitySumDescription" xml:space="preserve">
-    <value>The sum of the two values provided.</value>
-    <comment>description</comment>
-  </data>
-  <data name="ChildActivitySumDisplayName" xml:space="preserve">
-    <value>Sum</value>
-    <comment>display name</comment>
-  </data>
   <data name="IndicoScopeApiKeyDescription" xml:space="preserve">
     <value>The API Key used to connect to your API.</value>
     <comment>description</comment>
   </data>
   <data name="IndicoScopeApiKeyDisplayName" xml:space="preserve">
     <value>API Key</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ListCollectionsDescription" xml:space="preserve">
+    <value>Lists all collections associated with your account</value>
+    <comment>description</comment>
+  </data>
+  <data name="ListCollectionsDisplayName" xml:space="preserve">
+    <value>List Collections</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionListResultsDescription" xml:space="preserve">
+    <value>List of indico Custom Collections</value>
+    <comment>description</comment>
+  </data>
+  <data name="CollectionListResultsDisplayName" xml:space="preserve">
+    <value>Results</value>
     <comment>display name</comment>
   </data>
 </root>

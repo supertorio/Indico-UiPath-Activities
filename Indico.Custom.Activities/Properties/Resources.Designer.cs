@@ -70,74 +70,20 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The child activity that goes inside the scope..
+        ///   Looks up a localized string similar to List of indico Custom Collections.
         /// </summary>
-        internal static string ChildActivityDescription {
+        internal static string CollectionListResultsDescription {
             get {
-                return ResourceManager.GetString("ChildActivityDescription", resourceCulture);
+                return ResourceManager.GetString("CollectionListResultsDescription", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Child Activity.
+        ///   Looks up a localized string similar to Results.
         /// </summary>
-        internal static string ChildActivityDisplayName {
+        internal static string CollectionListResultsDisplayName {
             get {
-                return ResourceManager.GetString("ChildActivityDisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The first value that you want to sum..
-        /// </summary>
-        internal static string ChildActivityFirstValueDescription {
-            get {
-                return ResourceManager.GetString("ChildActivityFirstValueDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to FirstValue.
-        /// </summary>
-        internal static string ChildActivityFirstValueDisplayName {
-            get {
-                return ResourceManager.GetString("ChildActivityFirstValueDisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The second value you want to sum..
-        /// </summary>
-        internal static string ChildActivitySecondValueDescription {
-            get {
-                return ResourceManager.GetString("ChildActivitySecondValueDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SecondValue.
-        /// </summary>
-        internal static string ChildActivitySecondValueDisplayName {
-            get {
-                return ResourceManager.GetString("ChildActivitySecondValueDisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The sum of the two values provided..
-        /// </summary>
-        internal static string ChildActivitySumDescription {
-            get {
-                return ResourceManager.GetString("ChildActivitySumDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sum.
-        /// </summary>
-        internal static string ChildActivitySumDisplayName {
-            get {
-                return ResourceManager.GetString("ChildActivitySumDisplayName", resourceCulture);
+                return ResourceManager.GetString("CollectionListResultsDisplayName", resourceCulture);
             }
         }
         
@@ -201,6 +147,24 @@ namespace Indico.Custom.Activities.Properties {
         internal static string Input {
             get {
                 return ResourceManager.GetString("Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lists all collections associated with your account.
+        /// </summary>
+        internal static string ListCollectionsDescription {
+            get {
+                return ResourceManager.GetString("ListCollectionsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List Collections.
+        /// </summary>
+        internal static string ListCollectionsDisplayName {
+            get {
+                return ResourceManager.GetString("ListCollectionsDisplayName", resourceCulture);
             }
         }
         

@@ -201,4 +201,8 @@
     <value>Server is unreachable. Please make sure it is up and running!</value>
     <comment>Error Message</comment>
   </data>
+  <data name="Application_API_Request_Failure" xml:space="preserve">
+    <value>Something went wrong when communicating with the indico api server.</value>
+    <comment>Error Message</comment>
+  </data>
 </root>

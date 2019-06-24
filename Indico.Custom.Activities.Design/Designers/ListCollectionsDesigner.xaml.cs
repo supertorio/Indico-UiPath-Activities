@@ -3,9 +3,9 @@
     /// <summary>
     /// Interaction logic for ChildActivityDesigner.xaml
     /// </summary>
-    public partial class ChildActivityDesigner
+    public partial class ListCollectionsDesigner
     {
-        public ChildActivityDesigner()
+        public ListCollectionsDesigner()
         {
             InitializeComponent();
         }

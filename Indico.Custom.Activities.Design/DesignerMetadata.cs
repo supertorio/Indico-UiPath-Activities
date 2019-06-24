@@ -17,11 +17,11 @@ namespace Indico.Custom.Activities.Design
 
             builder.AddCustomAttributes(typeof(IndicoCustomScope), categoryAttribute);
             builder.AddCustomAttributes(typeof(IndicoCustomScope), new DesignerAttribute(typeof(ParentScopeDesigner)));
-            builder.AddCustomAttributes(typeof(IndicoCustomScope), new HelpKeywordAttribute("https://go.uipath.com"));
+            builder.AddCustomAttributes(typeof(IndicoCustomScope), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/"));
 
-            builder.AddCustomAttributes(typeof(ChildActivity), categoryAttribute);
-            builder.AddCustomAttributes(typeof(ChildActivity), new DesignerAttribute(typeof(ChildActivityDesigner)));
-            builder.AddCustomAttributes(typeof(ChildActivity), new HelpKeywordAttribute("https://go.uipath.com"));
+            builder.AddCustomAttributes(typeof(ListCollections), categoryAttribute);
+            builder.AddCustomAttributes(typeof(ListCollections), new DesignerAttribute(typeof(ListCollectionsDesigner)));
+            builder.AddCustomAttributes(typeof(ListCollections), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/"));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

@@ -47,8 +47,8 @@
       <Link>Properties\Indico.CustomAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="ActivitiesConstraints.cs" />
-    <Compile Include="Activities\ChildActivity.cs" />
     <Compile Include="Activities\IndicoCustomScope.cs" />
+    <Compile Include="Activities\ListCollections.cs" />
     <Compile Include="AsyncTaskCodeActivity.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Localization.cs" />
