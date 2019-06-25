@@ -3,6 +3,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.Activities.Statements;
 using Indico.Custom.Activities.Properties;
+using Indico.Custom.Enums;
 
 namespace Indico.Custom.Activities
 {
@@ -19,12 +20,24 @@ namespace Indico.Custom.Activities
         [LocalizedCategory(nameof(Resources.Authentication))]
         [LocalizedDisplayName(nameof(Resources.IndicoScopeApiKeyDisplayName))]
         [LocalizedDescription(nameof(Resources.IndicoScopeApiKeyDescription))]
+        [RequiredArgument]
         public InArgument<string> ApiKey { get; set; }
 
         [LocalizedCategory(nameof(Resources.Authentication))]
         [LocalizedDisplayName(nameof(Resources.IndicoScopeApiURLDisplayName))]
         [LocalizedDescription(nameof(Resources.IndicoScopeApiURLDescription))]
+        [RequiredArgument]
         public InArgument<string> ApiURL { get; set; }
+
+        [LocalizedCategory(nameof(Resources.ModelInformation))]
+        [LocalizedDisplayName(nameof(Resources.IndicoScopeModelNameDisplayName))]
+        [LocalizedDescription(nameof(Resources.IndicoScopeModelNameDescription))]
+        public InArgument<string> CollectionName { get; set; }
+
+        [LocalizedCategory(nameof(Resources.ModelInformation))]
+        [LocalizedDisplayName(nameof(Resources.IndicoScopeModelDomainDisplayName))]
+        [LocalizedDescription(nameof(Resources.IndicoScopeModelDomainDescription))]
+        public ModelDomain CollectionDomain { get; set; }
 
         internal static string ParentContainerPropertyTag => "IndicoScope";
 
@@ -42,6 +55,7 @@ namespace Indico.Custom.Activities
             };
 
             ApiURL = "https://apiv2.indico.io/";
+            CollectionDomain = ModelDomain.Standard;
         }
 
         #endregion
@@ -58,7 +72,9 @@ namespace Indico.Custom.Activities
         {
             var apiKey = ApiKey.Get(context);
             var apiUrl = ApiURL.Get(context);
-            var application = new Application(apiKey, apiUrl);
+            var collectionName = CollectionName.Get(context);
+            var collectionDomain = CollectionDomain;
+            var application = new Application(apiKey, apiUrl, collectionName, collectionDomain);
 
             if (Body != null)
             {

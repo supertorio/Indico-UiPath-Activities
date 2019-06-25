@@ -23,6 +23,11 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(ListCollections), new DesignerAttribute(typeof(ListCollectionsDesigner)));
             builder.AddCustomAttributes(typeof(ListCollections), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/"));
 
+            builder.AddCustomAttributes(typeof(AddData), categoryAttribute);
+            builder.AddCustomAttributes(typeof(AddData), new DesignerAttribute(typeof(AddDataDesigner)));
+            builder.AddCustomAttributes(typeof(AddData), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/adding-data/"));
+
+
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
     }
