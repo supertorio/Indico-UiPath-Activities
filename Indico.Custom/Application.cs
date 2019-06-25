@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Indico.Custom.Enums;
 using Indico.Custom.Models;
 using Indico.Custom.Properties;
 
@@ -16,9 +18,13 @@ namespace Indico.Custom
         #region Properties
 
         private HttpClient Client { get; set; }
-        private string APIKey { get; set; }
+        private string APIKey { get; }
         private string URL { get; }
-        private CustomCollectionService collectionService;
+
+        private string CollectionName { get; }
+        private ModelDomain CollectionDomain { get; }
+
+        private CustomCollectionService collectionService { get; }
         #endregion
 
 
@@ -28,10 +34,12 @@ namespace Indico.Custom
 		public Application() { }
 
         // Creates a new Application
-        public Application(string apiKey, string indicoAPIURL)
+        public Application(string apiKey, string indicoAPIURL, string collectionName, ModelDomain collectionDomain)
         {
             APIKey = apiKey;
             URL = indicoAPIURL;
+            CollectionName = collectionName;
+            CollectionDomain = collectionDomain;
             CreateClient();
 
             collectionService = new CustomCollectionService(Client, APIKey);
@@ -72,6 +80,17 @@ namespace Indico.Custom
         public async Task<CollectionsResponse> GetCollections()
         {
             return await collectionService.GetCollectionsList();
+        }
+
+        /// <summary>
+        /// Calls the add data endpoint
+        /// </summary>
+        /// <param name="labeledData">A list of labeled data points</param>
+        /// <param name="domain">One of the available indico data domains</param>
+        /// <returns></returns>
+        public async Task<AddDataResponse> AddCollectionsData(List<CollectionData> labeledData)
+        {
+            return await collectionService.AddCollectionsData(CollectionName, labeledData, CollectionDomain);
         }
 
         #endregion

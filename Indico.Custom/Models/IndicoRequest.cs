@@ -2,10 +2,10 @@
 using System.Net.Http;
 using System.Text;
 
-namespace Indico.Pretrained.Models
+namespace Indico.Custom.Models
 {
     [JsonObject()]
-    public class IndicoRequest
+    class IndicoRequest
     {
         [JsonProperty(PropertyName = "api_key")]
         public string APIKey { get; set; }

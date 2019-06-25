@@ -173,4 +173,48 @@
     <value>Results</value>
     <comment>display name</comment>
   </data>
+  <data name="AddDataDescription" xml:space="preserve">
+    <value>Adds labled data to a custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="AddDataDisplayName" xml:space="preserve">
+    <value>Add Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="LabeledDataArgumentDescription" xml:space="preserve">
+    <value>List of labeled data items</value>
+    <comment>description</comment>
+  </data>
+  <data name="LabeledDataArgumentDisplayName" xml:space="preserve">
+    <value>Labeled Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="LabeledDataResultsDescription" xml:space="preserve">
+    <value>True if the labeled data was added successfully</value>
+    <comment>description</comment>
+  </data>
+  <data name="LabeledDataResultsDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="IndicoScopeModelDomainDescription" xml:space="preserve">
+    <value>Domain to use for this model</value>
+    <comment>description</comment>
+  </data>
+  <data name="IndicoScopeModelDomainDisplayName" xml:space="preserve">
+    <value>Collection Domain</value>
+    <comment>display name</comment>
+  </data>
+  <data name="IndicoScopeModelNameDescription" xml:space="preserve">
+    <value>Name of the custom collection to interact with</value>
+    <comment>description</comment>
+  </data>
+  <data name="IndicoScopeModelNameDisplayName" xml:space="preserve">
+    <value>Custom Collection Name</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ModelInformation" xml:space="preserve">
+    <value>Model Information</value>
+    <comment>property group</comment>
+  </data>
 </root>

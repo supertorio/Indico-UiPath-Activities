@@ -61,6 +61,24 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adds labled data to a custom collection.
+        /// </summary>
+        internal static string AddDataDescription {
+            get {
+                return ResourceManager.GetString("AddDataDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Data.
+        /// </summary>
+        internal static string AddDataDisplayName {
+            get {
+                return ResourceManager.GetString("AddDataDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         internal static string Authentication {
@@ -142,11 +160,83 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Domain to use for this model.
+        /// </summary>
+        internal static string IndicoScopeModelDomainDescription {
+            get {
+                return ResourceManager.GetString("IndicoScopeModelDomainDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Collection Domain.
+        /// </summary>
+        internal static string IndicoScopeModelDomainDisplayName {
+            get {
+                return ResourceManager.GetString("IndicoScopeModelDomainDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of the custom collection to interact with.
+        /// </summary>
+        internal static string IndicoScopeModelNameDescription {
+            get {
+                return ResourceManager.GetString("IndicoScopeModelNameDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Collection Name.
+        /// </summary>
+        internal static string IndicoScopeModelNameDisplayName {
+            get {
+                return ResourceManager.GetString("IndicoScopeModelNameDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Input.
         /// </summary>
         internal static string Input {
             get {
                 return ResourceManager.GetString("Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of labeled data items.
+        /// </summary>
+        internal static string LabeledDataArgumentDescription {
+            get {
+                return ResourceManager.GetString("LabeledDataArgumentDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Labeled Data.
+        /// </summary>
+        internal static string LabeledDataArgumentDisplayName {
+            get {
+                return ResourceManager.GetString("LabeledDataArgumentDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the labeled data was added successfully.
+        /// </summary>
+        internal static string LabeledDataResultsDescription {
+            get {
+                return ResourceManager.GetString("LabeledDataResultsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string LabeledDataResultsDisplayName {
+            get {
+                return ResourceManager.GetString("LabeledDataResultsDisplayName", resourceCulture);
             }
         }
         
@@ -174,6 +264,15 @@ namespace Indico.Custom.Activities.Properties {
         internal static string MetadataValidationError {
             get {
                 return ResourceManager.GetString("MetadataValidationError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Model Information.
+        /// </summary>
+        internal static string ModelInformation {
+            get {
+                return ResourceManager.GetString("ModelInformation", resourceCulture);
             }
         }
         
