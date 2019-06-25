@@ -10,8 +10,16 @@ namespace Indico.Custom.Models
         [JsonProperty(PropertyName = "api_key")]
         public string APIKey { get; set; }
 
+        [JsonProperty(PropertyName = "collection")]
+        public string CollectionName { get; set; }
+
         [JsonProperty(PropertyName = "data")]
         public string Data { get; set; }
+
+        public bool ShouldSerializeCollectionName()
+        {
+            return (CollectionName != null);
+        }
 
         public bool ShouldSerializeData()
         {
@@ -21,6 +29,12 @@ namespace Indico.Custom.Models
         public IndicoRequest(string apiKey)
         {
             this.APIKey = apiKey;
+        }
+
+        public IndicoRequest(string apiKey, string collectionName)
+        {
+            this.APIKey = apiKey;
+            this.CollectionName = collectionName;
         }
 
         public static StringContent StringContentFromObject(IndicoRequest requestBody)

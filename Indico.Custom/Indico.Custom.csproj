@@ -68,6 +68,7 @@
     <Compile Include="Models\AddData\AddDataResponse.cs" />
     <Compile Include="Models\AddData\AddDataRequest.cs" />
     <Compile Include="Models\AddData\CollectionData.cs" />
+    <Compile Include="Models\Collections\CollectionResponse.cs" />
     <Compile Include="Models\Collections\CustomCollection.cs" />
     <Compile Include="Models\Collections\CollectionsResponse.cs" />
     <Compile Include="Models\IndicoRequest.cs" />

@@ -88,6 +88,42 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns info about the collection.
+        /// </summary>
+        internal static string CollectionInfoDescription {
+            get {
+                return ResourceManager.GetString("CollectionInfoDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Model Info.
+        /// </summary>
+        internal static string CollectionInfoDisplayName {
+            get {
+                return ResourceManager.GetString("CollectionInfoDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Object containing information about the current collection.
+        /// </summary>
+        internal static string CollectionInfoResultsDescription {
+            get {
+                return ResourceManager.GetString("CollectionInfoResultsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Collection Status.
+        /// </summary>
+        internal static string CollectionInfoResultsDisplayName {
+            get {
+                return ResourceManager.GetString("CollectionInfoResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to List of indico Custom Collections.
         /// </summary>
         internal static string CollectionListResultsDescription {

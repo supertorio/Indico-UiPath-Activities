@@ -41,7 +41,29 @@ namespace Indico.Custom
                 throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
             }
         }
-        
+
+        /// <summary>
+        /// Returns full informaiton set for a collection
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to fetch</param>
+        /// <returns>An object describing the custom collection</returns>
+        public async Task<CollectionResponse> GetCollectionInfo(string collectionName)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.CollectionInfo, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<CollectionResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
         /// <summary>
         /// Performs a http post request to the add data endpoint
         /// </summary>
