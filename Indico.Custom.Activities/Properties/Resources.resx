@@ -213,16 +213,12 @@
     <value>Custom Collection Name</value>
     <comment>display name</comment>
   </data>
-  <data name="ModelInformation" xml:space="preserve">
-    <value>Model Information</value>
-    <comment>property group</comment>
-  </data>
   <data name="CollectionInfoDescription" xml:space="preserve">
     <value>Returns info about the collection</value>
     <comment>description</comment>
   </data>
   <data name="CollectionInfoDisplayName" xml:space="preserve">
-    <value>Model Info</value>
+    <value>Collection Info</value>
     <comment>display name</comment>
   </data>
   <data name="CollectionInfoResultsDescription" xml:space="preserve">
@@ -232,5 +228,17 @@
   <data name="CollectionInfoResultsDisplayName" xml:space="preserve">
     <value>Collection Status</value>
     <comment>display name</comment>
+  </data>
+  <data name="TrainCollectionDescription" xml:space="preserve">
+    <value>Initiate training on the custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="TrainCollectionDisplayName" xml:space="preserve">
+    <value>Train Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionInfoCategoryName" xml:space="preserve">
+    <value>Collection Info</value>
+    <comment>property group</comment>
   </data>
 </root>

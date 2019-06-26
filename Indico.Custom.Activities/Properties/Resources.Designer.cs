@@ -88,6 +88,15 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Collection Info.
+        /// </summary>
+        internal static string CollectionInfoCategoryName {
+            get {
+                return ResourceManager.GetString("CollectionInfoCategoryName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns info about the collection.
         /// </summary>
         internal static string CollectionInfoDescription {
@@ -97,7 +106,7 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Model Info.
+        ///   Looks up a localized string similar to Collection Info.
         /// </summary>
         internal static string CollectionInfoDisplayName {
             get {
@@ -304,20 +313,29 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Model Information.
-        /// </summary>
-        internal static string ModelInformation {
-            get {
-                return ResourceManager.GetString("ModelInformation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Output.
         /// </summary>
         internal static string Output {
             get {
                 return ResourceManager.GetString("Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initiate training on the custom collection.
+        /// </summary>
+        internal static string TrainCollectionDescription {
+            get {
+                return ResourceManager.GetString("TrainCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train Collection.
+        /// </summary>
+        internal static string TrainCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("TrainCollectionDisplayName", resourceCulture);
             }
         }
     }

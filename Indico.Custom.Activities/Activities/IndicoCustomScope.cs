@@ -29,12 +29,12 @@ namespace Indico.Custom.Activities
         [RequiredArgument]
         public InArgument<string> ApiURL { get; set; }
 
-        [LocalizedCategory(nameof(Resources.ModelInformation))]
+        [LocalizedCategory(nameof(Resources.CollectionInfoCategoryName))]
         [LocalizedDisplayName(nameof(Resources.IndicoScopeModelNameDisplayName))]
         [LocalizedDescription(nameof(Resources.IndicoScopeModelNameDescription))]
         public InArgument<string> CollectionName { get; set; }
 
-        [LocalizedCategory(nameof(Resources.ModelInformation))]
+        [LocalizedCategory(nameof(Resources.CollectionInfoCategoryName))]
         [LocalizedDisplayName(nameof(Resources.IndicoScopeModelDomainDisplayName))]
         [LocalizedDescription(nameof(Resources.IndicoScopeModelDomainDescription))]
         public ModelDomain CollectionDomain { get; set; }
