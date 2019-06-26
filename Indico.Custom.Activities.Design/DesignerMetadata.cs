@@ -31,6 +31,10 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(AddData), new DesignerAttribute(typeof(AddDataDesigner)));
             builder.AddCustomAttributes(typeof(AddData), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/adding-data/"));
 
+            builder.AddCustomAttributes(typeof(TrainCollection), categoryAttribute);
+            builder.AddCustomAttributes(typeof(TrainCollection), new DesignerAttribute(typeof(TrainCollectionDesigner)));
+            builder.AddCustomAttributes(typeof(TrainCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/training/"));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

@@ -86,5 +86,28 @@ namespace Indico.Custom
                 throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
             }
         }
+
+
+        /// <summary>
+        /// Initiates a train on a custom collection
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to fetch</param>
+        /// <returns>An object describing the status custom collection</returns>
+        public async Task<CollectionResponse> StartTrainCollection(string collectionName)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.Train, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<CollectionResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
     }
 }

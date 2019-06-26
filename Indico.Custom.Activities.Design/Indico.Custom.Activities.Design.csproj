@@ -57,6 +57,9 @@
     <Compile Include="Designers\AddDataDesigner.xaml.cs">
       <DependentUpon>AddDataDesigner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Designers\TrainCollectionDesigner.xaml.cs">
+      <DependentUpon>TrainCollectionDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\CollectionInfoDesigner.xaml.cs">
       <DependentUpon>CollectionInfoDesigner.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
     <Page Include="Designers\AddDataDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\TrainCollectionDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Designers\CollectionInfoDesigner.xaml">
       <SubType>Designer</SubType>

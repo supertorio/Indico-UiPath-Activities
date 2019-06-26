@@ -74,7 +74,7 @@ namespace Indico.Custom
         #region Action Calls
 
         /// <summary>
-        /// Calls the list collections endpoint
+        /// Intantiates a call to the list collections endpoint
         /// </summary>
         /// <returns>Async Task Reponse Encapsulating the Collections Response</returns>
         public async Task<CollectionsResponse> GetCollections()
@@ -82,21 +82,35 @@ namespace Indico.Custom
             return await collectionService.GetCollectionsList();
         }
 
+        /// <summary>
+        /// Intantiates a call to be backend service to get the status of a given custom collection
+        /// </summary>
+        /// <returns>Async Task Response</returns>
         public async Task<CollectionResponse> GetCollection()
         {
             return await collectionService.GetCollectionInfo(CollectionName);
         }
 
         /// <summary>
-        /// Calls the add data endpoint
+        /// Initiates a call to the add data endpoint for the current collection
         /// </summary>
         /// <param name="labeledData">A list of labeled data points</param>
         /// <param name="domain">One of the available indico data domains</param>
-        /// <returns></returns>
+        /// <returns>Async Task Response</returns>
         public async Task<AddDataResponse> AddCollectionsData(List<CollectionData> labeledData)
         {
             return await collectionService.AddCollectionsData(CollectionName, labeledData, CollectionDomain);
         }
+
+        /// <summary>
+        /// Initiates a call to the train endpoint for the current collection
+        /// </summary>
+        /// <returns></returns>
+        public async Task<CollectionResponse> TrainCollection()
+        {
+            return await collectionService.StartTrainCollection(CollectionName);
+        }
+
 
         #endregion
     }

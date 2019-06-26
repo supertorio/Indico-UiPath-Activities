@@ -1,7 +1,5 @@
 ﻿using Indico.Custom.Activities.Properties;
-using Indico.Custom.Enums;
 using Indico.Custom.Models;
-using System;
 using System.Activities;
 using System.Collections.Generic;
 using System.Threading;
