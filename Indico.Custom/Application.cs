@@ -82,6 +82,11 @@ namespace Indico.Custom
             return await collectionService.GetCollectionsList();
         }
 
+        public async Task<CollectionResponse> GetCollection()
+        {
+            return await collectionService.GetCollectionInfo(CollectionName);
+        }
+
         /// <summary>
         /// Calls the add data endpoint
         /// </summary>

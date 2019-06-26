@@ -50,6 +50,7 @@
     <Compile Include="Activities\AddData.cs" />
     <Compile Include="Activities\IndicoCustomScope.cs" />
     <Compile Include="Activities\ListCollections.cs" />
+    <Compile Include="Activities\CollectionInfo.cs" />
     <Compile Include="AsyncTaskCodeActivity.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Localization.cs" />

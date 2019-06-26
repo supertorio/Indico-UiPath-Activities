@@ -9,9 +9,6 @@ namespace Indico.Custom.Models
     [JsonObject()]
     class AddDataRequest : IndicoRequest
     {
-        [JsonProperty(PropertyName = "collection")]
-        string CollectionName { get; set; }
-
         [JsonProperty(PropertyName = "domain")]
         [JsonConverter(typeof(StringEnumConverter))]
         ModelDomain Domain { get; set; }
@@ -20,9 +17,8 @@ namespace Indico.Custom.Models
         [JsonConverter(typeof(CollectionDataConverter))]
         List<CollectionData> LabeledData { get; set; }
 
-        public AddDataRequest(string apiKey, string collectionName, ModelDomain domain, List<CollectionData> data) : base(apiKey)
+        public AddDataRequest(string apiKey, string collectionName, ModelDomain domain, List<CollectionData> data) : base(apiKey, collectionName)
         {
-            CollectionName = collectionName;
             Domain = domain;
             LabeledData = data;
         }
