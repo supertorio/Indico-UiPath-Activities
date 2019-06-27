@@ -48,6 +48,9 @@
     </Compile>
     <Compile Include="ActivitiesConstraints.cs" />
     <Compile Include="Activities\AddData.cs" />
+    <Compile Include="Activities\GetAnnotations.cs" />
+    <Compile Include="Activities\GetExplanations.cs" />
+    <Compile Include="Activities\GetPredictions.cs" />
     <Compile Include="Activities\TrainCollection.cs" />
     <Compile Include="Activities\IndicoCustomScope.cs" />
     <Compile Include="Activities\ListCollections.cs" />

@@ -130,7 +130,7 @@
     <comment>property group</comment>
   </data>
   <data name="IndicoScope" xml:space="preserve">
-    <value>Indico Custom Scope</value>
+    <value>Custom Collection Scope</value>
     <comment>display name</comment>
   </data>
   <data name="IndicoScopeDescription" xml:space="preserve">
@@ -240,5 +240,61 @@
   <data name="CollectionInfoCategoryName" xml:space="preserve">
     <value>Collection Info</value>
     <comment>property group</comment>
+  </data>
+  <data name="ExamplesDataArgumentDescription" xml:space="preserve">
+    <value>List of text or base 64 encoded image examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="ExamplesDataArgumentDisplayName" xml:space="preserve">
+    <value>Examples</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ExplainResultsDescription" xml:space="preserve">
+    <value>Explanation of predictions for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="ExplainResultsDisplayName" xml:space="preserve">
+    <value>Prediction Explanations</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetExplanationsDescription" xml:space="preserve">
+    <value>Returns prediction explanations for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetExplanationsDisplayName" xml:space="preserve">
+    <value>Explain (Classification)</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetPredictionsDescription" xml:space="preserve">
+    <value>Returns classification predictions for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetPredictionsDisplayName" xml:space="preserve">
+    <value>Predict (Classification)</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PredictionResultsDescription" xml:space="preserve">
+    <value>Predictions for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="PredictionResultsDisplayName" xml:space="preserve">
+    <value>Predictions</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AnnotationResultsDescription" xml:space="preserve">
+    <value>Annotations for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="AnnotationResultsDisplayName" xml:space="preserve">
+    <value>Annotation Predictions</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetAnnotationsDescription" xml:space="preserve">
+    <value>Returns annotation predictions for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetAnnotationsDisplayName" xml:space="preserve">
+    <value>Predict (Annotations)</value>
+    <comment>display name</comment>
   </data>
 </root>

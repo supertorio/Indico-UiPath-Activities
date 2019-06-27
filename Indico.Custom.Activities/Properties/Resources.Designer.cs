@@ -79,6 +79,24 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Annotations for the provided examples.
+        /// </summary>
+        internal static string AnnotationResultsDescription {
+            get {
+                return ResourceManager.GetString("AnnotationResultsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annotation Predictions.
+        /// </summary>
+        internal static string AnnotationResultsDisplayName {
+            get {
+                return ResourceManager.GetString("AnnotationResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         internal static string Authentication {
@@ -151,7 +169,97 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Indico Custom Scope.
+        ///   Looks up a localized string similar to List of text or base 64 encoded image examples.
+        /// </summary>
+        internal static string ExamplesDataArgumentDescription {
+            get {
+                return ResourceManager.GetString("ExamplesDataArgumentDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        internal static string ExamplesDataArgumentDisplayName {
+            get {
+                return ResourceManager.GetString("ExamplesDataArgumentDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explanation of predictions for the provided examples.
+        /// </summary>
+        internal static string ExplainResultsDescription {
+            get {
+                return ResourceManager.GetString("ExplainResultsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prediction Explanations.
+        /// </summary>
+        internal static string ExplainResultsDisplayName {
+            get {
+                return ResourceManager.GetString("ExplainResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns annotation predictions for given examples.
+        /// </summary>
+        internal static string GetAnnotationsDescription {
+            get {
+                return ResourceManager.GetString("GetAnnotationsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predict (Annotations).
+        /// </summary>
+        internal static string GetAnnotationsDisplayName {
+            get {
+                return ResourceManager.GetString("GetAnnotationsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns prediction explanations for given examples.
+        /// </summary>
+        internal static string GetExplanationsDescription {
+            get {
+                return ResourceManager.GetString("GetExplanationsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explain (Classification).
+        /// </summary>
+        internal static string GetExplanationsDisplayName {
+            get {
+                return ResourceManager.GetString("GetExplanationsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns classification predictions for given examples.
+        /// </summary>
+        internal static string GetPredictionsDescription {
+            get {
+                return ResourceManager.GetString("GetPredictionsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predict (Classification).
+        /// </summary>
+        internal static string GetPredictionsDisplayName {
+            get {
+                return ResourceManager.GetString("GetPredictionsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Collection Scope.
         /// </summary>
         internal static string IndicoScope {
             get {
@@ -318,6 +426,24 @@ namespace Indico.Custom.Activities.Properties {
         internal static string Output {
             get {
                 return ResourceManager.GetString("Output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predictions for the provided examples.
+        /// </summary>
+        internal static string PredictionResultsDescription {
+            get {
+                return ResourceManager.GetString("PredictionResultsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predictions.
+        /// </summary>
+        internal static string PredictionResultsDisplayName {
+            get {
+                return ResourceManager.GetString("PredictionResultsDisplayName", resourceCulture);
             }
         }
         

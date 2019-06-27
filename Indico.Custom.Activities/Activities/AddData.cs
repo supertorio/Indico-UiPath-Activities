@@ -20,7 +20,7 @@ namespace Indico.Custom.Activities
 
         [LocalizedDisplayName(nameof(Resources.LabeledDataResultsDisplayName))]
         [LocalizedDescription(nameof(Resources.LabeledDataResultsDescription))]
-        [LocalizedCategory(nameof(Resources.LabeledDataResultsDisplayName))]
+        [LocalizedCategory(nameof(Resources.Output))]
         public OutArgument<bool> Result { get; set; }
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
