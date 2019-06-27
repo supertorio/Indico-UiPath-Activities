@@ -54,6 +54,15 @@
       <DependentUpon>FilePathControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ActivityIconConverter.cs" />
+    <Compile Include="Designers\GetExplanationsDesigner.xaml.cs">
+      <DependentUpon>GetExplanationsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetAnnotationsDesigner.xaml.cs">
+      <DependentUpon>GetAnnotationsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetPredictionsDesigner.xaml.cs">
+      <DependentUpon>GetPredictionsDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\AddDataDesigner.xaml.cs">
       <DependentUpon>AddDataDesigner.xaml</DependentUpon>
     </Compile>
@@ -88,6 +97,18 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\FilePathControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetExplanationsDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetAnnotationsDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetPredictionsDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

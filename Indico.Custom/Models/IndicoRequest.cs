@@ -14,7 +14,7 @@ namespace Indico.Custom.Models
         public string CollectionName { get; set; }
 
         [JsonProperty(PropertyName = "data")]
-        public string Data { get; set; }
+        public object Data { get; set; }
 
         public bool ShouldSerializeCollectionName()
         {
@@ -35,6 +35,13 @@ namespace Indico.Custom.Models
         {
             this.APIKey = apiKey;
             this.CollectionName = collectionName;
+        }
+
+        public IndicoRequest(string apiKey, string collectionName, object data)
+        {
+            this.APIKey = apiKey;
+            this.CollectionName = collectionName;
+            this.Data = data;
         }
 
         public static StringContent StringContentFromObject(IndicoRequest requestBody)

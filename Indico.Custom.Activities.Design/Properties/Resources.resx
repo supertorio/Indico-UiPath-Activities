@@ -137,4 +137,20 @@
     <value>Drop Activity Here</value>
     <comment>hint</comment>
   </data>
+  <data name="GetExplanationsHint" xml:space="preserve">
+    <value>List of text or base64 encoded image samples</value>
+    <comment>hint</comment>
+  </data>
+  <data name="GetExplanationsInput" xml:space="preserve">
+    <value>Examples</value>
+    <comment>Input Label</comment>
+  </data>
+  <data name="GetPredictionsHint" xml:space="preserve">
+    <value>List of text or base64 encoded image samples</value>
+    <comment>hint</comment>
+  </data>
+  <data name="GetPredictionsInput" xml:space="preserve">
+    <value>Examples</value>
+    <comment>Input Label</comment>
+  </data>
 </root>

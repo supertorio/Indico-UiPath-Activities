@@ -91,7 +91,7 @@ namespace Indico.Custom
         /// <summary>
         /// Initiates a train on a custom collection
         /// </summary>
-        /// <param name="collectionName">Name of the collection to fetch</param>
+        /// <param name="collectionName">Name of the collection to train</param>
         /// <returns>An object describing the status custom collection</returns>
         public async Task<CollectionResponse> StartTrainCollection(string collectionName)
         {
@@ -103,6 +103,75 @@ namespace Indico.Custom
                 HTTPMagic.CheckStatus(response);
                 string responseBody = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<CollectionResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Performs model predictions on the supplied list of examples
+        /// </summary>
+        /// <param name="collectionName">Name of the custom collection to use for prediction</param>
+        /// <param name="examples">Array of strings to get predictions for</param>
+        /// <returns>An array of dictioaries of prediction values for each example supplied</returns>
+        public async Task<PredictResponse> GetPredictionsForExamples(string collectionName, string[] examples)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName, examples);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.Predict, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<PredictResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Performs annotation model predictions on the supplied list of examples
+        /// </summary>
+        /// <param name="collectionName">Name of the custom collection to use for prediction</param>
+        /// <param name="examples">Array of strings to get predictions for</param>
+        /// <returns>An list of annotation prediction objects</returns>
+        public async Task<PredictAnnotationResponse> GetAnnotationPredictionsForExamples(string collectionName, string[] examples)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName, examples);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.Predict, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<PredictAnnotationResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Performs model prediction explanation on the supplied list of examples
+        /// </summary>
+        /// <param name="collectionName">Name of the custom collection to use for explanation</param>
+        /// <param name="examples">Array of strings to get prediction explanations for</param>
+        /// <returns>An array of dictioaries of explanation values for each example supplied</returns>
+        public async Task<ExplainResponse> GetPredictExplanationsForExamples(string collectionName, string[] examples)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName, examples);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.Explain, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<ExplainResponse>(responseBody);
             }
             catch (HttpRequestException hre)
             {

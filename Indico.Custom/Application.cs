@@ -105,12 +105,41 @@ namespace Indico.Custom
         /// <summary>
         /// Initiates a call to the train endpoint for the current collection
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Async Task Response</returns>
         public async Task<CollectionResponse> TrainCollection()
         {
             return await collectionService.StartTrainCollection(CollectionName);
         }
 
+        /// <summary>
+        /// Initiates a call to the predict endpoint for the current collection with the provided list of examples
+        /// </summary>
+        /// <param name="examples">List of examples to predict for</param>
+        /// <returns>Async Task Response</returns>
+        public async Task<PredictResponse> GetPredictions(string[] examples)
+        {
+            return await collectionService.GetPredictionsForExamples(CollectionName, examples);
+        }
+
+        /// <summary>
+        /// Initiates a call to the predict endpoint for the current collection with the provided list of examples
+        /// </summary>
+        /// <param name="examples">List of examples to predict for</param>
+        /// <returns>Async Task Response</returns>
+        public async Task<PredictAnnotationResponse> GetAnnotationPredictions(string[] examples)
+        {
+            return await collectionService.GetAnnotationPredictionsForExamples(CollectionName, examples);
+        }
+
+        /// <summary>
+        /// Initiates a call to the explain endpoint for the current collection with the provided list of examples
+        /// </summary>
+        /// <param name="examples">List of examples to explain predictions for</param>
+        /// <returns>Async Task Response</returns>
+        public async Task<ExplainResponse> GetExplanations(string[] examples)
+        {
+            return await collectionService.GetPredictExplanationsForExamples(CollectionName, examples);
+        }
 
         #endregion
     }

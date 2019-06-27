@@ -35,6 +35,17 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(TrainCollection), new DesignerAttribute(typeof(TrainCollectionDesigner)));
             builder.AddCustomAttributes(typeof(TrainCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/training/"));
 
+            builder.AddCustomAttributes(typeof(GetPredictions), categoryAttribute);
+            builder.AddCustomAttributes(typeof(GetPredictions), new DesignerAttribute(typeof(GetPredictionsDesigner)));
+            builder.AddCustomAttributes(typeof(GetPredictions), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/making-predictions/"));
+
+            builder.AddCustomAttributes(typeof(GetAnnotations), categoryAttribute);
+            builder.AddCustomAttributes(typeof(GetAnnotations), new DesignerAttribute(typeof(GetAnnotationsDesigner)));
+            builder.AddCustomAttributes(typeof(GetAnnotations), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/making-predictions/"));
+
+            builder.AddCustomAttributes(typeof(GetExplanations), categoryAttribute);
+            builder.AddCustomAttributes(typeof(GetExplanations), new DesignerAttribute(typeof(GetExplanationsDesigner)));
+            builder.AddCustomAttributes(typeof(GetExplanations), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/explaining-predictions/"));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

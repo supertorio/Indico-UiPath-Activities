@@ -104,5 +104,41 @@ namespace Indico.Custom.Activities.Design.Properties {
                 return ResourceManager.GetString("DropActivityHere", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of text or base64 encoded image samples.
+        /// </summary>
+        public static string GetExplanationsHint {
+            get {
+                return ResourceManager.GetString("GetExplanationsHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        public static string GetExplanationsInput {
+            get {
+                return ResourceManager.GetString("GetExplanationsInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of text or base64 encoded image samples.
+        /// </summary>
+        public static string GetPredictionsHint {
+            get {
+                return ResourceManager.GetString("GetPredictionsHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        public static string GetPredictionsInput {
+            get {
+                return ResourceManager.GetString("GetPredictionsInput", resourceCulture);
+            }
+        }
     }
 }

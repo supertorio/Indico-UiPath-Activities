@@ -3,23 +3,22 @@
 namespace Indico.Custom.Models
 {
     [JsonObject()]
-    public class AnnotationLabel
+    public class AnnotationData
     {
         [JsonProperty(PropertyName = "start")]
         public int Start { get; set; }
+
         [JsonProperty(PropertyName = "end")]
         public int End { get; set; }
+
         [JsonProperty(PropertyName = "label")]
         public string Label { get; set; }
-        [JsonProperty(PropertyName = "text")]
-        public string Text { get; set; }
 
-        public AnnotationLabel(int start, int end, string label, string text)
+        public AnnotationData(int start, int end, string label)
         {
             Start = start;
             End = end;
             Label = label;
-            Text = text;
         }
     }
 
@@ -40,7 +39,7 @@ namespace Indico.Custom.Models
             Label = labels;
         }
 
-        public CollectionData(string text, AnnotationLabel[] labels)
+        public CollectionData(string text, AnnotationData[] labels)
         {
             SampleText = text;
             Label = labels;
