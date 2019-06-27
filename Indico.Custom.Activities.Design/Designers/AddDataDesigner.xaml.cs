@@ -1,4 +1,7 @@
-﻿namespace Indico.Custom.Activities.Design
+﻿using System.Collections.Generic;
+using Indico.Custom.Models;
+
+namespace Indico.Custom.Activities.Design
 {
     /// <summary>
     /// Interaction logic for AddDataDesigner.xaml
@@ -8,6 +11,7 @@
         public AddDataDesigner()
         {
             InitializeComponent();
+            DataExpression.ExpressionType = typeof(List<CollectionData>);
         }
     }
 }

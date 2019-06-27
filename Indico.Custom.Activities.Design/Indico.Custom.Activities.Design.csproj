@@ -146,6 +146,10 @@
       <Project>{72A5A485-3822-4AEF-8299-B8664B3F832A}</Project>
       <Name>Indico.Custom.Activities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Indico.Custom\Indico.Custom.csproj">
+      <Project>{FDE8E52D-FC0C-4A62-BE6B-9F737E33FE13}</Project>
+      <Name>Indico.Custom</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Indico.Custom.Activities.Design.nuspec" />

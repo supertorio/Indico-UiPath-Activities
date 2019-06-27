@@ -8,6 +8,7 @@
         public GetAnnotationsDesigner()
         {
             InitializeComponent();
+            ExamplesPresentation.ExpressionType = typeof(string[]);
         }
     }
 }
