@@ -8,6 +8,7 @@
         public GetPredictionsDesigner()
         {
             InitializeComponent();
+            ExamplesPresentation.ExpressionType = typeof(string[]);
         }
     }
 }

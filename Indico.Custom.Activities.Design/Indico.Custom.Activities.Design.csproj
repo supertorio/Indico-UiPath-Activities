@@ -54,6 +54,12 @@
       <DependentUpon>FilePathControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ActivityIconConverter.cs" />
+    <Compile Include="Designers\RemoveCollectionDesigner.xaml.cs">
+      <DependentUpon>RemoveCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\RemoveDataDesigner.xaml.cs">
+      <DependentUpon>RemoveDataDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\GetExplanationsDesigner.xaml.cs">
       <DependentUpon>GetExplanationsDesigner.xaml</DependentUpon>
     </Compile>
@@ -97,6 +103,14 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\FilePathControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\RemoveCollectionDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\RemoveDataDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -145,6 +159,10 @@
     <ProjectReference Include="..\Indico.Custom.Activities\Indico.Custom.Activities.csproj">
       <Project>{72A5A485-3822-4AEF-8299-B8664B3F832A}</Project>
       <Name>Indico.Custom.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Indico.Custom\Indico.Custom.csproj">
+      <Project>{FDE8E52D-FC0C-4A62-BE6B-9F737E33FE13}</Project>
+      <Name>Indico.Custom</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

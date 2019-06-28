@@ -65,12 +65,34 @@ namespace Indico.Custom
         }
 
         /// <summary>
+        /// Peforms an API request to delete a collection
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to delete</param>
+        /// <returns>Simple success flag response</returns>
+        public async Task<SimpleResponse> DeleteCollection(string collectionName)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.DeleteCollection, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
         /// Performs a http post request to the add data endpoint
         /// </summary>
         /// <param name="labeledData">list of labeled data points</param>
         /// <param name="domain">the model domain to be used</param>
         /// <returns>Boolean value representing if the data was successfully added to the collection</returns>
-        public async Task<AddDataResponse> AddCollectionsData(string collectionName, List<CollectionData> labeledData, ModelDomain domain)
+        public async Task<AddDataResponse> AddCollectionData(string collectionName, List<CollectionData> labeledData, ModelDomain domain)
         {
             AddDataRequest requestBody = new AddDataRequest(APIKey, collectionName, domain, labeledData);
 
@@ -87,6 +109,27 @@ namespace Indico.Custom
             }
         }
 
+        /// <summary>
+        /// Performs an api request to remove data from a collection
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to train</param>
+        /// <param name="examples">list of strings</param>
+        /// <returns>simple success flag response</returns>
+        public async Task<SimpleResponse> RemoveCollectionData(string collectionName, string[] examples)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName, examples);
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.RemoveData, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
 
         /// <summary>
         /// Initiates a train on a custom collection

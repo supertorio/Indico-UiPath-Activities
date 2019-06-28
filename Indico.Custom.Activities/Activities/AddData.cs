@@ -32,7 +32,7 @@ namespace Indico.Custom.Activities
         protected override Task<AddDataResponse> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken, Application client)
         {
             var labeledData = Data.Get(context);
-            return client.AddCollectionsData(labeledData);
+            return client.AddCollectionData(labeledData);
         }
 
         protected override void OutputResult(AsyncCodeActivityContext context, AddDataResponse response)

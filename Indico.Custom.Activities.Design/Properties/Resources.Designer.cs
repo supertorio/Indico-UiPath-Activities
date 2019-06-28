@@ -140,5 +140,23 @@ namespace Indico.Custom.Activities.Design.Properties {
                 return ResourceManager.GetString("GetPredictionsInput", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of text or base 64 encoded image exampes to be removed.
+        /// </summary>
+        public static string RemoveExamplesHint {
+            get {
+                return ResourceManager.GetString("RemoveExamplesHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        public static string RemoveExamplesInput {
+            get {
+                return ResourceManager.GetString("RemoveExamplesInput", resourceCulture);
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
         public GetExplanationsDesigner()
         {
             InitializeComponent();
+            ExamplesPresentation.ExpressionType = typeof(string[]);
         }
     }
 }

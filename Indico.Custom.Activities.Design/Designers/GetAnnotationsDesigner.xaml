@@ -37,7 +37,7 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Margin="5" Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.GetPredictionsInput}"></TextBlock>
-                <sapv:ExpressionTextBox  Margin="5" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=Data}" ExpressionType="s:String" HintText="{x:Static p:Resources.GetPredictionsHint}"
+                <sapv:ExpressionTextBox x:Name="ExamplesPresentation" Margin="5" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static p:Resources.GetPredictionsHint}"
                                     Expression="{Binding Path=ModelItem.Examples, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In, Mode=TwoWay}" />
 
             </Grid>

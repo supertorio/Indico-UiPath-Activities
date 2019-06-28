@@ -23,6 +23,10 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(ListCollections), new DesignerAttribute(typeof(ListCollectionsDesigner)));
             builder.AddCustomAttributes(typeof(ListCollections), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/"));
 
+            builder.AddCustomAttributes(typeof(RemoveCollection), categoryAttribute);
+            builder.AddCustomAttributes(typeof(RemoveCollection), new DesignerAttribute(typeof(RemoveCollectionDesigner)));
+            builder.AddCustomAttributes(typeof(RemoveCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/deleting-collections/"));
+
             builder.AddCustomAttributes(typeof(CollectionInfo), categoryAttribute);
             builder.AddCustomAttributes(typeof(CollectionInfo), new DesignerAttribute(typeof(CollectionInfoDesigner)));
             builder.AddCustomAttributes(typeof(CollectionInfo), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/checking-status/"));
@@ -30,6 +34,10 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(AddData), categoryAttribute);
             builder.AddCustomAttributes(typeof(AddData), new DesignerAttribute(typeof(AddDataDesigner)));
             builder.AddCustomAttributes(typeof(AddData), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/adding-data/"));
+
+            builder.AddCustomAttributes(typeof(RemoveData), categoryAttribute);
+            builder.AddCustomAttributes(typeof(RemoveData), new DesignerAttribute(typeof(RemoveDataDesigner)));
+            builder.AddCustomAttributes(typeof(RemoveData), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/removing-data/"));
 
             builder.AddCustomAttributes(typeof(TrainCollection), categoryAttribute);
             builder.AddCustomAttributes(typeof(TrainCollection), new DesignerAttribute(typeof(TrainCollectionDesigner)));
