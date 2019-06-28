@@ -153,4 +153,12 @@
     <value>Examples</value>
     <comment>Input Label</comment>
   </data>
+  <data name="RemoveExamplesHint" xml:space="preserve">
+    <value>List of text or base 64 encoded image exampes to be removed</value>
+    <comment>hint</comment>
+  </data>
+  <data name="RemoveExamplesInput" xml:space="preserve">
+    <value>Examples</value>
+    <comment>Input Label</comment>
+  </data>
 </root>

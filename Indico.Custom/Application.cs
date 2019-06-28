@@ -92,14 +92,33 @@ namespace Indico.Custom
         }
 
         /// <summary>
+        /// Initiates a call to delete a collection
+        /// </summary>
+        /// <returns>Async Task Response</returns>
+        public async Task<SimpleResponse> DeleteCollection()
+        {
+            return await collectionService.DeleteCollection(CollectionName);
+        }
+
+        /// <summary>
         /// Initiates a call to the add data endpoint for the current collection
         /// </summary>
         /// <param name="labeledData">A list of labeled data points</param>
         /// <param name="domain">One of the available indico data domains</param>
         /// <returns>Async Task Response</returns>
-        public async Task<AddDataResponse> AddCollectionsData(List<CollectionData> labeledData)
+        public async Task<AddDataResponse> AddCollectionData(List<CollectionData> labeledData)
         {
-            return await collectionService.AddCollectionsData(CollectionName, labeledData, CollectionDomain);
+            return await collectionService.AddCollectionData(CollectionName, labeledData, CollectionDomain);
+        }
+
+        /// <summary>
+        /// Initiates a call to remove examples from a collection
+        /// </summary>
+        /// <param name="examples">List of strings to be removed</param>
+        /// <returns>Async Task Response</returns>
+        public async Task<SimpleResponse> RemoveCollectionData(string[] examples)
+        {
+            return await collectionService.RemoveCollectionData(CollectionName, examples);
         }
 
         /// <summary>

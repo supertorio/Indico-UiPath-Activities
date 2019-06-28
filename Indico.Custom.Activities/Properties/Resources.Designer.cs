@@ -448,6 +448,78 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clears and deletes a custom collection.
+        /// </summary>
+        internal static string RemoveCollectionDescription {
+            get {
+                return ResourceManager.GetString("RemoveCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Collection.
+        /// </summary>
+        internal static string RemoveCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("RemoveCollectionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removes example data from a collection.
+        /// </summary>
+        internal static string RemoveDataDescription {
+            get {
+                return ResourceManager.GetString("RemoveDataDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Example Data.
+        /// </summary>
+        internal static string RemoveDataDisplayName {
+            get {
+                return ResourceManager.GetString("RemoveDataDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of examples to remove.
+        /// </summary>
+        internal static string RemoveExamplesDescription {
+            get {
+                return ResourceManager.GetString("RemoveExamplesDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        internal static string RemoveExamplesDisplayName {
+            get {
+                return ResourceManager.GetString("RemoveExamplesDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the removal was successful.
+        /// </summary>
+        internal static string RemoveSuccessDescription {
+            get {
+                return ResourceManager.GetString("RemoveSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string RemoveSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("RemoveSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Initiate training on the custom collection.
         /// </summary>
         internal static string TrainCollectionDescription {

@@ -297,4 +297,36 @@
     <value>Predict (Annotations)</value>
     <comment>display name</comment>
   </data>
+  <data name="RemoveCollectionDescription" xml:space="preserve">
+    <value>Clears and deletes a custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveCollectionDisplayName" xml:space="preserve">
+    <value>Remove Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveDataDescription" xml:space="preserve">
+    <value>Removes example data from a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveDataDisplayName" xml:space="preserve">
+    <value>Remove Example Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveExamplesDescription" xml:space="preserve">
+    <value>List of examples to remove</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveExamplesDisplayName" xml:space="preserve">
+    <value>Examples</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveSuccessDescription" xml:space="preserve">
+    <value>True if the removal was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
 </root>

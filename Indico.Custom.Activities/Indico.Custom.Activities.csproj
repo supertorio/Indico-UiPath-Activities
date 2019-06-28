@@ -51,6 +51,8 @@
     <Compile Include="Activities\GetAnnotations.cs" />
     <Compile Include="Activities\GetExplanations.cs" />
     <Compile Include="Activities\GetPredictions.cs" />
+    <Compile Include="Activities\RemoveCollection.cs" />
+    <Compile Include="Activities\RemoveData.cs" />
     <Compile Include="Activities\TrainCollection.cs" />
     <Compile Include="Activities\IndicoCustomScope.cs" />
     <Compile Include="Activities\ListCollections.cs" />
