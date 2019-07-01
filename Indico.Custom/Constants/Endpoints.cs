@@ -10,6 +10,9 @@
         public static string Predict => "/custom/predict";
         public static string Explain => "custom/explain";
         public static string DeleteCollection => "custom/clear_collection";
-
+        public static string RegisterCollection => "custom/register";
+        public static string DeregisterCollection => "custom/deregister";
+        public static string AuthorizeUser => "custom/authorize";
+        public static string DeauthorizeUser => "custom/deauthorize";
     }
 }

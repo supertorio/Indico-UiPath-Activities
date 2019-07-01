@@ -81,9 +81,9 @@ namespace Indico.Custom.Activities.Design.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Indico.Custom.
         /// </summary>
-        public static string Category {
+        public static string BaseCategory {
             get {
-                return ResourceManager.GetString("Category", resourceCulture);
+                return ResourceManager.GetString("BaseCategory", resourceCulture);
             }
         }
         
@@ -156,6 +156,15 @@ namespace Indico.Custom.Activities.Design.Properties {
         public static string RemoveExamplesInput {
             get {
                 return ResourceManager.GetString("RemoveExamplesInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indico.Custom.Sharing.
+        /// </summary>
+        public static string SharingCategory {
+            get {
+                return ResourceManager.GetString("SharingCategory", resourceCulture);
             }
         }
     }

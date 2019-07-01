@@ -125,7 +125,7 @@
     <value>List of CollectionData Objects</value>
     <comment>hint</comment>
   </data>
-  <data name="Category" xml:space="preserve">
+  <data name="BaseCategory" xml:space="preserve">
     <value>Indico.Custom</value>
     <comment>Category</comment>
   </data>
@@ -160,5 +160,9 @@
   <data name="RemoveExamplesInput" xml:space="preserve">
     <value>Examples</value>
     <comment>Input Label</comment>
+  </data>
+  <data name="SharingCategory" xml:space="preserve">
+    <value>Indico.Custom.Sharing</value>
+    <comment>Category</comment>
   </data>
 </root>

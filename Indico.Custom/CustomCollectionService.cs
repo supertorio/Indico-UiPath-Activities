@@ -221,5 +221,50 @@ namespace Indico.Custom
                 throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
             }
         }
+
+        /// <summary>
+        /// Call endpoint to make collection available for sharing and optionally public
+        /// </summary>
+        /// <param name="collectionName">Name of the custom collection to register</param>
+        /// <param name="isPublic">True if the collection should be set to public</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> RegisterCollection(string collectionName, bool isPublic)
+        {
+            RegisterRequest requestBody = new RegisterRequest(APIKey, collectionName, isPublic);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.RegisterCollection, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Calls endpoint to make collection no longer shareable
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to deregister</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> DeregisterCollection(string collectionName)
+        {
+            IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.DeregisterCollection, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
     }
 }

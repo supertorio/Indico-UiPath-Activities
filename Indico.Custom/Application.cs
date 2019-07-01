@@ -160,6 +160,36 @@ namespace Indico.Custom
             return await collectionService.GetPredictExplanationsForExamples(CollectionName, examples);
         }
 
+        /// <summary>
+        /// Initiates a call to make the collection to be shareable
+        /// </summary>
+        /// <param name="isPublic">True to make the collection publicly availabe</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> RegisterCollection(bool isPublic)
+        {
+            return await collectionService.RegisterCollection(CollectionName, isPublic);
+        }
+
+        /// <summary>
+        /// Iniates a call to make the collection not shareable
+        /// </summary>
+        /// <returns></returns>
+        public async Task<SimpleResponse> DeregisterCollection()
+        {
+            return await collectionService.DeregisterCollection(CollectionName);
+        }
+
+        //public async Task<SimpleResponse> AddUserToCollection()
+        //{
+
+        //}
+
+        //public async Task<SimpleResponse> RemoveUserFromCollection()
+        //{
+
+        //}
+
+
         #endregion
     }
 }

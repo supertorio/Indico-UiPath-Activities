@@ -329,4 +329,44 @@
     <value>Success</value>
     <comment>display name</comment>
   </data>
+  <data name="DeregisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to not be shareable</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterCollectionDisplayName" xml:space="preserve">
+    <value>Unpublish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeregisterSuccessDescription" xml:space="preserve">
+    <value>Deregistration of collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to be sharable</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionDisplayName" xml:space="preserve">
+    <value>Publish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDescription" xml:space="preserve">
+    <value>True if the collection should be publicly available</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDisplayName" xml:space="preserve">
+    <value>Make Public</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDescription" xml:space="preserve">
+    <value>Registeration collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
 </root>

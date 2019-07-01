@@ -169,6 +169,42 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Configures a collection to not be shareable.
+        /// </summary>
+        internal static string DeregisterCollectionDescription {
+            get {
+                return ResourceManager.GetString("DeregisterCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unpublish Collection.
+        /// </summary>
+        internal static string DeregisterCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("DeregisterCollectionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deregistration of collection complete.
+        /// </summary>
+        internal static string DeregisterSuccessDescription {
+            get {
+                return ResourceManager.GetString("DeregisterSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string DeregisterSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("DeregisterSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to List of text or base 64 encoded image examples.
         /// </summary>
         internal static string ExamplesDataArgumentDescription {
@@ -444,6 +480,60 @@ namespace Indico.Custom.Activities.Properties {
         internal static string PredictionResultsDisplayName {
             get {
                 return ResourceManager.GetString("PredictionResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configures a collection to be sharable.
+        /// </summary>
+        internal static string RegisterCollectionDescription {
+            get {
+                return ResourceManager.GetString("RegisterCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publish Collection.
+        /// </summary>
+        internal static string RegisterCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterCollectionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the collection should be publicly available.
+        /// </summary>
+        internal static string RegisterCollectionMakePublicDescription {
+            get {
+                return ResourceManager.GetString("RegisterCollectionMakePublicDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make Public.
+        /// </summary>
+        internal static string RegisterCollectionMakePublicDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterCollectionMakePublicDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registeration collection complete.
+        /// </summary>
+        internal static string RegisterSuccessDescription {
+            get {
+                return ResourceManager.GetString("RegisterSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string RegisterSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterSuccessDisplayName", resourceCulture);
             }
         }
         

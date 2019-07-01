@@ -48,9 +48,11 @@
     </Compile>
     <Compile Include="ActivitiesConstraints.cs" />
     <Compile Include="Activities\AddData.cs" />
+    <Compile Include="Activities\DeregisterCollection.cs" />
     <Compile Include="Activities\GetAnnotations.cs" />
     <Compile Include="Activities\GetExplanations.cs" />
     <Compile Include="Activities\GetPredictions.cs" />
+    <Compile Include="Activities\RegisterCollection.cs" />
     <Compile Include="Activities\RemoveCollection.cs" />
     <Compile Include="Activities\RemoveData.cs" />
     <Compile Include="Activities\TrainCollection.cs" />
