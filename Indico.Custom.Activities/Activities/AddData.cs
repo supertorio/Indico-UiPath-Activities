@@ -37,7 +37,7 @@ namespace Indico.Custom.Activities
 
         protected override void OutputResult(AsyncCodeActivityContext context, AddDataResponse response)
         {
-            Result.Set(context, response.results);
+            Result.Set(context, response.Results);
         }
     }
 }

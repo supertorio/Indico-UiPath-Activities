@@ -7,10 +7,10 @@ namespace Indico.Custom.Models
     public class CollectionPermissionSet
     {
         [JsonProperty(PropertyName = "read")]
-        string[] Read { get; set; }
+        public string[] Read { get; set; }
 
         [JsonProperty(PropertyName = "write")]
-        string[] Write { get; set; }
+        public string[] Write { get; set; }
     }
 
 

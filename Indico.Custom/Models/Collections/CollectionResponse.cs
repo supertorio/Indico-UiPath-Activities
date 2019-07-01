@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Indico.Custom.Models
 {
+    [JsonObject()]
     public class CollectionResponse
     {
-        public CustomCollection results { get; set; }
+        [JsonProperty(PropertyName = "results")]
+        public CustomCollection Results { get; set; }
     }
 }

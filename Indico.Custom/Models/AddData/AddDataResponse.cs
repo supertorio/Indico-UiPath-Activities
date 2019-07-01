@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace Indico.Custom.Models
 {
+    [JsonObject()]
     public class AddDataResponse
     {
-        public bool results { get; set; }
+        [JsonProperty(PropertyName = "results")]
+        public bool Results { get; set; }
     }
 }
