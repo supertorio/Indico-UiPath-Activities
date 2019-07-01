@@ -54,6 +54,18 @@
       <DependentUpon>FilePathControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ActivityIconConverter.cs" />
+    <Compile Include="Designers\DeAuthorizeUserDesigner.xaml.cs">
+      <DependentUpon>DeAuthorizeUserDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\AuthorizeUserDesigner.xaml.cs">
+      <DependentUpon>AuthorizeUserDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\DeRegisterCollectionDesigner.xaml.cs">
+      <DependentUpon>DeRegisterCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\RegisterCollectionDesigner.xaml.cs">
+      <DependentUpon>RegisterCollectionDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Designers\RemoveCollectionDesigner.xaml.cs">
       <DependentUpon>RemoveCollectionDesigner.xaml</DependentUpon>
     </Compile>
@@ -105,6 +117,22 @@
     <Page Include="Controls\FilePathControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\DeAuthorizeUserDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\AuthorizeUserDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\DeRegisterCollectionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\RegisterCollectionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Designers\RemoveCollectionDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -64,7 +64,8 @@
     <Compile Include="Application.cs" />
     <Compile Include="CustomCollectionService.cs" />
     <Compile Include="Constants\Endpoints.cs" />
-    <Compile Include="Enums\ModelDomains.cs" />
+    <Compile Include="Enums\ModelDomain.cs" />
+    <Compile Include="Enums\CollectionPermission.cs" />
     <Compile Include="Models\AddData\AddDataResponse.cs" />
     <Compile Include="Models\AddData\AddDataRequest.cs" />
     <Compile Include="Models\AddData\CollectionData.cs" />
@@ -74,6 +75,9 @@
     <Compile Include="Models\IndicoRequest.cs" />
     <Compile Include="Models\Predict\ExplainResponse.cs" />
     <Compile Include="Models\Predict\PredictResponse.cs" />
+    <Compile Include="Models\Sharing\AuthorizeRequest.cs" />
+    <Compile Include="Models\Sharing\DeAuthorizeRequest.cs" />
+    <Compile Include="Models\Sharing\RegisterRequest.cs" />
     <Compile Include="Models\SimpleResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />

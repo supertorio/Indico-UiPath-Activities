@@ -160,6 +160,46 @@ namespace Indico.Custom
             return await collectionService.GetPredictExplanationsForExamples(CollectionName, examples);
         }
 
+        /// <summary>
+        /// Initiates a call to make the collection to be shareable
+        /// </summary>
+        /// <param name="isPublic">True to make the collection publicly availabe</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> RegisterCollection(bool isPublic)
+        {
+            return await collectionService.RegisterCollection(CollectionName, isPublic);
+        }
+
+        /// <summary>
+        /// Iniates a call to make the collection not shareable
+        /// </summary>
+        /// <returns></returns>
+        public async Task<SimpleResponse> DeregisterCollection()
+        {
+            return await collectionService.DeRegisterCollection(CollectionName);
+        }
+
+        /// <summary>
+        /// Initiates a call to grant permission to a user on a collection
+        /// </summary>
+        /// <param name="userEmail">User's email address</param>
+        /// <param name="permission">Which permission to grant</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> AddUserToCollection(string userEmail, CollectionPermission permission)
+        {
+            return await collectionService.AuthorizeCollectionUser(CollectionName, userEmail, permission);
+        }
+
+        /// <summary>
+        /// Initiates a call to revoke permission to a user on a collection
+        /// </summary>
+        /// <param name="userEmail">User's email address</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> RemoveUserFromCollection(string userEmail)
+        {
+            return await collectionService.DeAuthorizeCollectionUser(CollectionName, userEmail);
+        }
+
         #endregion
     }
 }

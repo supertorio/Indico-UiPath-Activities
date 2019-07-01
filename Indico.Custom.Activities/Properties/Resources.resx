@@ -329,4 +329,100 @@
     <value>Success</value>
     <comment>display name</comment>
   </data>
+  <data name="DeregisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to not be shareable</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterCollectionDisplayName" xml:space="preserve">
+    <value>Unpublish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeregisterSuccessDescription" xml:space="preserve">
+    <value>Deregistration of collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to be sharable</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionDisplayName" xml:space="preserve">
+    <value>Publish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDescription" xml:space="preserve">
+    <value>True if the collection should be publicly available</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDisplayName" xml:space="preserve">
+    <value>Make Public</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDescription" xml:space="preserve">
+    <value>Registeration collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeSuccessDescription" xml:space="preserve">
+    <value>True if the authorization was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserDescription" xml:space="preserve">
+    <value>Grant user permissions on a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserDisplayName" xml:space="preserve">
+    <value>Authorize User</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserEmailDisplayName" xml:space="preserve">
+    <value>User Email</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserEmailsDescription" xml:space="preserve">
+    <value>Email associated with the user account</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserPermissionDescription" xml:space="preserve">
+    <value>Which permission to grant</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserPermissionDisplayName" xml:space="preserve">
+    <value>Permission</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeSuccessDescription" xml:space="preserve">
+    <value>True if the de-authorization was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeAuthorizeSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserDescription" xml:space="preserve">
+    <value>Revokes user permissions on a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeAuthorizeUserDisplayName" xml:space="preserve">
+    <value>De-Authorize User</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserEmailDisplayName" xml:space="preserve">
+    <value>User Email</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserEmailsDescription" xml:space="preserve">
+    <value>Email associated with the user account</value>
+    <comment>description</comment>
+  </data>
 </root>

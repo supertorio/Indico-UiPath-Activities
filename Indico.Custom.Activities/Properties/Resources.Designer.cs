@@ -106,6 +106,78 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to True if the authorization was successful.
+        /// </summary>
+        internal static string AuthorizeSuccessDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string AuthorizeSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grant user permissions on a collection.
+        /// </summary>
+        internal static string AuthorizeUserDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authorize User.
+        /// </summary>
+        internal static string AuthorizeUserDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Email.
+        /// </summary>
+        internal static string AuthorizeUserEmailDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserEmailDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email associated with the user account.
+        /// </summary>
+        internal static string AuthorizeUserEmailsDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserEmailsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which permission to grant.
+        /// </summary>
+        internal static string AuthorizeUserPermissionDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserPermissionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permission.
+        /// </summary>
+        internal static string AuthorizeUserPermissionDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserPermissionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collection Info.
         /// </summary>
         internal static string CollectionInfoCategoryName {
@@ -165,6 +237,96 @@ namespace Indico.Custom.Activities.Properties {
         internal static string CollectionListResultsDisplayName {
             get {
                 return ResourceManager.GetString("CollectionListResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the de-authorization was successful.
+        /// </summary>
+        internal static string DeAuthorizeSuccessDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string DeAuthorizeSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Revokes user permissions on a collection.
+        /// </summary>
+        internal static string DeAuthorizeUserDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to De-Authorize User.
+        /// </summary>
+        internal static string DeAuthorizeUserDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Email.
+        /// </summary>
+        internal static string DeAuthorizeUserEmailDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserEmailDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email associated with the user account.
+        /// </summary>
+        internal static string DeAuthorizeUserEmailsDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserEmailsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configures a collection to not be shareable.
+        /// </summary>
+        internal static string DeregisterCollectionDescription {
+            get {
+                return ResourceManager.GetString("DeregisterCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unpublish Collection.
+        /// </summary>
+        internal static string DeregisterCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("DeregisterCollectionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deregistration of collection complete.
+        /// </summary>
+        internal static string DeregisterSuccessDescription {
+            get {
+                return ResourceManager.GetString("DeregisterSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string DeregisterSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("DeregisterSuccessDisplayName", resourceCulture);
             }
         }
         
@@ -444,6 +606,60 @@ namespace Indico.Custom.Activities.Properties {
         internal static string PredictionResultsDisplayName {
             get {
                 return ResourceManager.GetString("PredictionResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configures a collection to be sharable.
+        /// </summary>
+        internal static string RegisterCollectionDescription {
+            get {
+                return ResourceManager.GetString("RegisterCollectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publish Collection.
+        /// </summary>
+        internal static string RegisterCollectionDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterCollectionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the collection should be publicly available.
+        /// </summary>
+        internal static string RegisterCollectionMakePublicDescription {
+            get {
+                return ResourceManager.GetString("RegisterCollectionMakePublicDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make Public.
+        /// </summary>
+        internal static string RegisterCollectionMakePublicDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterCollectionMakePublicDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registeration collection complete.
+        /// </summary>
+        internal static string RegisterSuccessDescription {
+            get {
+                return ResourceManager.GetString("RegisterSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string RegisterSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("RegisterSuccessDisplayName", resourceCulture);
             }
         }
         
