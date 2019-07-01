@@ -60,9 +60,17 @@ namespace Indico.Custom.Activities.Design
             builder.AddCustomAttributes(typeof(RegisterCollection), new DesignerAttribute(typeof(RegisterCollectionDesigner)));
             builder.AddCustomAttributes(typeof(RegisterCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/publishing-collections//"));
 
-            builder.AddCustomAttributes(typeof(DeregisterCollection), sharingCategoryAttribute);
-            builder.AddCustomAttributes(typeof(DeregisterCollection), new DesignerAttribute(typeof(DeregisterCollectionDesigner)));
-            builder.AddCustomAttributes(typeof(DeregisterCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/publishing-collections/"));
+            builder.AddCustomAttributes(typeof(DeRegisterCollection), sharingCategoryAttribute);
+            builder.AddCustomAttributes(typeof(DeRegisterCollection), new DesignerAttribute(typeof(DeRegisterCollectionDesigner)));
+            builder.AddCustomAttributes(typeof(DeRegisterCollection), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/publishing-collections/"));
+
+            builder.AddCustomAttributes(typeof(AuthorizeUser), sharingCategoryAttribute);
+            builder.AddCustomAttributes(typeof(AuthorizeUser), new DesignerAttribute(typeof(AuthorizeUserDesigner)));
+            builder.AddCustomAttributes(typeof(AuthorizeUser), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/sharing/"));
+
+            builder.AddCustomAttributes(typeof(DeAuthorizeUser), sharingCategoryAttribute);
+            builder.AddCustomAttributes(typeof(DeAuthorizeUser), new DesignerAttribute(typeof(DeAuthorizeUserDesigner)));
+            builder.AddCustomAttributes(typeof(DeAuthorizeUser), new HelpKeywordAttribute("https://indico.io/blog/docs/indico-api/custom-collections/sharing/"));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

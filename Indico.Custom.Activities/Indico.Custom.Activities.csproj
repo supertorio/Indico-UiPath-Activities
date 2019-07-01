@@ -48,7 +48,9 @@
     </Compile>
     <Compile Include="ActivitiesConstraints.cs" />
     <Compile Include="Activities\AddData.cs" />
-    <Compile Include="Activities\DeregisterCollection.cs" />
+    <Compile Include="Activities\AuthorizeUser.cs" />
+    <Compile Include="Activities\DeAuthorizeUser.cs" />
+    <Compile Include="Activities\DeRegisterCollection.cs" />
     <Compile Include="Activities\GetAnnotations.cs" />
     <Compile Include="Activities\GetExplanations.cs" />
     <Compile Include="Activities\GetPredictions.cs" />

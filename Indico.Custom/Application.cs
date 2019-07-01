@@ -176,19 +176,29 @@ namespace Indico.Custom
         /// <returns></returns>
         public async Task<SimpleResponse> DeregisterCollection()
         {
-            return await collectionService.DeregisterCollection(CollectionName);
+            return await collectionService.DeRegisterCollection(CollectionName);
         }
 
-        //public async Task<SimpleResponse> AddUserToCollection()
-        //{
+        /// <summary>
+        /// Initiates a call to grant permission to a user on a collection
+        /// </summary>
+        /// <param name="userEmail">User's email address</param>
+        /// <param name="permission">Which permission to grant</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> AddUserToCollection(string userEmail, CollectionPermission permission)
+        {
+            return await collectionService.AuthorizeCollectionUser(CollectionName, userEmail, permission);
+        }
 
-        //}
-
-        //public async Task<SimpleResponse> RemoveUserFromCollection()
-        //{
-
-        //}
-
+        /// <summary>
+        /// Initiates a call to revoke permission to a user on a collection
+        /// </summary>
+        /// <param name="userEmail">User's email address</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> RemoveUserFromCollection(string userEmail)
+        {
+            return await collectionService.DeAuthorizeCollectionUser(CollectionName, userEmail);
+        }
 
         #endregion
     }

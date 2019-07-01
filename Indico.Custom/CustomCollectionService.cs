@@ -250,13 +250,60 @@ namespace Indico.Custom
         /// </summary>
         /// <param name="collectionName">Name of the collection to deregister</param>
         /// <returns></returns>
-        public async Task<SimpleResponse> DeregisterCollection(string collectionName)
+        public async Task<SimpleResponse> DeRegisterCollection(string collectionName)
         {
             IndicoRequest requestBody = new IndicoRequest(APIKey, collectionName);
 
             try
             {
-                HttpResponseMessage response = await Client.PostAsync(Endpoints.DeregisterCollection, IndicoRequest.StringContentFromObject(requestBody));
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.DeRegisterCollection, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Calls endpoint to add a user to a collection with a given permission
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to grant permission</param>
+        /// <param name="userEmail">Email of the user to grant permission to</param>
+        /// <param name="permission">Which permission to assign</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> AuthorizeCollectionUser(string collectionName, string userEmail, CollectionPermission permission)
+        {
+            AuthorizeRequest requestBody = new AuthorizeRequest(APIKey, collectionName, userEmail, permission);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.AuthorizeUser, IndicoRequest.StringContentFromObject(requestBody));
+                HTTPMagic.CheckStatus(response);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);
+            }
+            catch (HttpRequestException hre)
+            {
+                throw new IndicoAPIException(Resources.Application_API_Request_Failure, hre);
+            }
+        }
+
+        /// <summary>
+        /// Calls endpoint to remove a user's permissions from a collection
+        /// </summary>
+        /// <param name="collectionName">Name of the collection to revoke permission from</param>
+        /// <param name="userEmail">Email of the user who's permission is being revoked</param>
+        /// <returns></returns>
+        public async Task<SimpleResponse> DeAuthorizeCollectionUser(string collectionName, string userEmail)
+        {
+            DeAuthorizeRequest requestBody = new DeAuthorizeRequest(APIKey, collectionName, userEmail);
+
+            try
+            {
+                HttpResponseMessage response = await Client.PostAsync(Endpoints.DeAuthorizeUser, IndicoRequest.StringContentFromObject(requestBody));
                 HTTPMagic.CheckStatus(response);
                 string responseBody = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<SimpleResponse>(responseBody);

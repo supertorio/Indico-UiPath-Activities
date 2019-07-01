@@ -165,4 +165,12 @@
     <value>Indico.Custom.Sharing</value>
     <comment>Category</comment>
   </data>
+  <data name="UserEmailInput" xml:space="preserve">
+    <value>User Email</value>
+    <comment>Input Label</comment>
+  </data>
+  <data name="UserInputHint" xml:space="preserve">
+    <value>Email for user's account</value>
+    <comment>hint</comment>
+  </data>
 </root>

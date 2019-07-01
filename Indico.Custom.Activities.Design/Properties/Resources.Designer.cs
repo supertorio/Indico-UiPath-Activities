@@ -167,5 +167,23 @@ namespace Indico.Custom.Activities.Design.Properties {
                 return ResourceManager.GetString("SharingCategory", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Email.
+        /// </summary>
+        public static string UserEmailInput {
+            get {
+                return ResourceManager.GetString("UserEmailInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email for user&apos;s account.
+        /// </summary>
+        public static string UserInputHint {
+            get {
+                return ResourceManager.GetString("UserInputHint", resourceCulture);
+            }
+        }
     }
 }

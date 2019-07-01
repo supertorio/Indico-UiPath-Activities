@@ -106,6 +106,78 @@ namespace Indico.Custom.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to True if the authorization was successful.
+        /// </summary>
+        internal static string AuthorizeSuccessDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string AuthorizeSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grant user permissions on a collection.
+        /// </summary>
+        internal static string AuthorizeUserDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authorize User.
+        /// </summary>
+        internal static string AuthorizeUserDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Email.
+        /// </summary>
+        internal static string AuthorizeUserEmailDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserEmailDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email associated with the user account.
+        /// </summary>
+        internal static string AuthorizeUserEmailsDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserEmailsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which permission to grant.
+        /// </summary>
+        internal static string AuthorizeUserPermissionDescription {
+            get {
+                return ResourceManager.GetString("AuthorizeUserPermissionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permission.
+        /// </summary>
+        internal static string AuthorizeUserPermissionDisplayName {
+            get {
+                return ResourceManager.GetString("AuthorizeUserPermissionDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collection Info.
         /// </summary>
         internal static string CollectionInfoCategoryName {
@@ -165,6 +237,60 @@ namespace Indico.Custom.Activities.Properties {
         internal static string CollectionListResultsDisplayName {
             get {
                 return ResourceManager.GetString("CollectionListResultsDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True if the de-authorization was successful.
+        /// </summary>
+        internal static string DeAuthorizeSuccessDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeSuccessDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        internal static string DeAuthorizeSuccessDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeSuccessDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Revokes user permissions on a collection.
+        /// </summary>
+        internal static string DeAuthorizeUserDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to De-Authorize User.
+        /// </summary>
+        internal static string DeAuthorizeUserDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Email.
+        /// </summary>
+        internal static string DeAuthorizeUserEmailDisplayName {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserEmailDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email associated with the user account.
+        /// </summary>
+        internal static string DeAuthorizeUserEmailsDescription {
+            get {
+                return ResourceManager.GetString("DeAuthorizeUserEmailsDescription", resourceCulture);
             }
         }
         

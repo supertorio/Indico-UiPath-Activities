@@ -1,11 +1,11 @@
 ﻿namespace Indico.Custom.Activities.Design
 {
     /// <summary>
-    /// Interaction logic for DeregisterCollectionDesigner.xaml
+    /// Interaction logic for DeRegisterCollectionDesigner.xaml
     /// </summary>
-    public partial class DeregisterCollectionDesigner
+    public partial class DeRegisterCollectionDesigner
     {
-        public DeregisterCollectionDesigner()
+        public DeRegisterCollectionDesigner()
         {
             InitializeComponent();
         }

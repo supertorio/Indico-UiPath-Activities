@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Indico.Custom.Models
 {
     [JsonObject()]
-    public class CollectionPermissions
+    public class CollectionPermissionSet
     {
         [JsonProperty(PropertyName = "read")]
         string[] Read { get; set; }
@@ -36,7 +36,7 @@ namespace Indico.Custom.Models
         public int NumExamples { get; set; }
 
         [JsonProperty(PropertyName = "permissions")]
-        public CollectionPermissions Permissions { get; set; }
+        public CollectionPermissionSet Permissions { get; set; }
 
         [JsonProperty(PropertyName = "public")]
         public bool IsPublic { get; set; }

@@ -9,7 +9,7 @@ namespace Indico.Custom.Activities
 {
     [LocalizedDisplayName(nameof(Resources.DeregisterCollectionDisplayName))]
     [LocalizedDescription(nameof(Resources.DeregisterCollectionDescription))]
-    public class DeregisterCollection : AsyncTaskCodeActivity<SimpleResponse>
+    public class DeRegisterCollection : AsyncTaskCodeActivity<SimpleResponse>
     {
 
         [LocalizedDisplayName(nameof(Resources.DeregisterSuccessDisplayName))]
