@@ -48,6 +48,6 @@ namespace Indico.Custom.Models
         public string Status { get; set; }
 
         [JsonProperty(PropertyName = "warnings")]
-        public List<string> Warnings { get; set; }
+        public object Warnings { get; set; }
     }
 }
