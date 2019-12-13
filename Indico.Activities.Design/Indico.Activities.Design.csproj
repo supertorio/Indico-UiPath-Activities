@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--/-:cnd -->
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{342B6AFA-33A2-4E40-AFE6-EE46F1DF7B0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Indico.Activities.Design</RootNamespace>
+    <AssemblyName>Indico.Activities.Design</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Indico.CustomAssemblyInfo.cs">
+      <Link>Properties\Indico.CustomAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\FilePathControl.xaml.cs">
+      <DependentUpon>FilePathControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ActivityIconConverter.cs" />
+    <Compile Include="Designers\DeAuthorizeUserDesigner.xaml.cs">
+      <DependentUpon>DeAuthorizeUserDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\AuthorizeUserDesigner.xaml.cs">
+      <DependentUpon>AuthorizeUserDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\DeRegisterCollectionDesigner.xaml.cs">
+      <DependentUpon>DeRegisterCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\FinetuneCollectionInfoDesigner.xaml.cs">
+      <DependentUpon>FinetuneCollectionInfoDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetFinetunePredictionsDesigner.xaml.cs">
+      <DependentUpon>GetFinetunePredictionsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\LoadFinetuneCollectionDesigner.xaml.cs">
+      <DependentUpon>LoadFinetuneCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\PdfExtractionDesigner.xaml.cs">
+      <DependentUpon>PdfExtractionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\RegisterCollectionDesigner.xaml.cs">
+      <DependentUpon>RegisterCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\RemoveCollectionDesigner.xaml.cs">
+      <DependentUpon>RemoveCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\RemoveDataDesigner.xaml.cs">
+      <DependentUpon>RemoveDataDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetExplanationsDesigner.xaml.cs">
+      <DependentUpon>GetExplanationsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetAnnotationsDesigner.xaml.cs">
+      <DependentUpon>GetAnnotationsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\GetPredictionsDesigner.xaml.cs">
+      <DependentUpon>GetPredictionsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\AddDataDesigner.xaml.cs">
+      <DependentUpon>AddDataDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\TrainCollectionDesigner.xaml.cs">
+      <DependentUpon>TrainCollectionDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\CollectionInfoDesigner.xaml.cs">
+      <DependentUpon>CollectionInfoDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\ListCollectionsDesigner.xaml.cs">
+      <DependentUpon>ListCollectionsDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Designers\ParentScopeDesigner.xaml.cs">
+      <DependentUpon>ParentScopeDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ActivityDecoratorControl.cs" />
+    <Compile Include="Converters\CustomConverter.cs" />
+    <Compile Include="DesignerMetadata.cs" />
+    <Compile Include="Properties\GlobalAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\FilePathControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\DeAuthorizeUserDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\AuthorizeUserDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\DeRegisterCollectionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\FinetuneCollectionInfoDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\GetFinetunePredictionsDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\LoadFinetuneCollectionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\PdfExtractionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\RegisterCollectionDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\RemoveCollectionDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\RemoveDataDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetExplanationsDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetAnnotationsDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\GetPredictionsDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\AddDataDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\TrainCollectionDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Designers\CollectionInfoDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\ListCollectionsDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Designers\ParentScopeDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Indico.Activities\Indico.Activities.csproj">
+      <Project>{72A5A485-3822-4AEF-8299-B8664B3F832A}</Project>
+      <Name>Indico.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Indico\Indico.csproj">
+      <Project>{FDE8E52D-FC0C-4A62-BE6B-9F737E33FE13}</Project>
+      <Name>Indico</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Indico.Activities.Design.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Id>$title$</Id>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Title>Indico.Custom.Activities</Title>
+    <Authors>Company</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://integrations.uipath.com/docs/integrating-with-uipath</PackageProjectUrl>
+    <Description>This activity was made using the UiPath Activity Set extension.</Description>
+    <Copyright>2019</Copyright>
+    <Tags>UiPath</Tags>
+    <PostBuildEvent>
+      if exist $(TargetDir)Packages\Indico.Custom*.* del $(TargetDir)Packages\Indico.Custom*.*
+      if $(ConfigurationName) == Debug "$(SolutionDir).nuget\NuGet.exe" pack "$(ProjectPath)" -OutputDirectory "Packages" -IncludeReferencedProjects -Prop Configuration=$(ConfigurationName)
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

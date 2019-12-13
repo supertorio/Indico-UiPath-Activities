@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentication</value>
+    <comment>property group</comment>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Input</value>
+    <comment>property group</comment>
+  </data>
+  <data name="Output" xml:space="preserve">
+    <value>Output</value>
+    <comment>property group</comment>
+  </data>
+  <data name="IndicoScope" xml:space="preserve">
+    <value>Indico Application Scope</value>
+    <comment>display name</comment>
+  </data>
+  <data name="IndicoScopeDescription" xml:space="preserve">
+    <value>The scope that connects to your Indico API.</value>
+    <comment>description</comment>
+  </data>
+  <data name="IndicoScopeApiURLDescription" xml:space="preserve">
+    <value>Address for the Indico API URL to connect to.</value>
+    <comment>description</comment>
+  </data>
+  <data name="IndicoScopeApiURLDisplayName" xml:space="preserve">
+    <value>Indico API URL</value>
+    <comment>display name</comment>
+  </data>
+  <data name="MetadataValidationError" xml:space="preserve">
+    <value>Please provide a value for {0}</value>
+    <comment>validation error</comment>
+  </data>
+  <data name="IndicoScopeApiKeyDescription" xml:space="preserve">
+    <value>The API Key used to connect to your API.</value>
+    <comment>description</comment>
+  </data>
+  <data name="IndicoScopeApiKeyDisplayName" xml:space="preserve">
+    <value>API Key</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ListCollectionsDescription" xml:space="preserve">
+    <value>Lists all collections associated with your account</value>
+    <comment>description</comment>
+  </data>
+  <data name="ListCollectionsDisplayName" xml:space="preserve">
+    <value>List Collections</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionListResultsDescription" xml:space="preserve">
+    <value>List of indico Custom Collections</value>
+    <comment>description</comment>
+  </data>
+  <data name="CollectionListResultsDisplayName" xml:space="preserve">
+    <value>Results</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AddDataDescription" xml:space="preserve">
+    <value>Adds labled data to a custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="AddDataDisplayName" xml:space="preserve">
+    <value>Add Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="LabeledDataArgumentDescription" xml:space="preserve">
+    <value>List of labeled data items</value>
+    <comment>description</comment>
+  </data>
+  <data name="LabeledDataArgumentDisplayName" xml:space="preserve">
+    <value>Labeled Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="LabeledDataResultsDescription" xml:space="preserve">
+    <value>True if the labeled data was added successfully</value>
+    <comment>description</comment>
+  </data>
+  <data name="LabeledDataResultsDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ModelDomainDescription" xml:space="preserve">
+    <value>Domain to use for this model</value>
+    <comment>description</comment>
+  </data>
+  <data name="ModelDomainDisplayName" xml:space="preserve">
+    <value>Collection Domain</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ModelNameDescription" xml:space="preserve">
+    <value>Name of the custom collection to interact with</value>
+    <comment>description</comment>
+  </data>
+  <data name="ModelNameDisplayName" xml:space="preserve">
+    <value>Custom Collection Name</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionInfoDescription" xml:space="preserve">
+    <value>Returns info about the collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="CollectionInfoDisplayName" xml:space="preserve">
+    <value>Collection Info</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionInfoResultsDescription" xml:space="preserve">
+    <value>Object containing information about the given collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="CollectionInfoResultsDisplayName" xml:space="preserve">
+    <value>Collection Status</value>
+    <comment>display name</comment>
+  </data>
+  <data name="TrainCollectionDescription" xml:space="preserve">
+    <value>Initiate training on the custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="TrainCollectionDisplayName" xml:space="preserve">
+    <value>Train Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="CollectionInfoCategoryName" xml:space="preserve">
+    <value>Collection Info</value>
+    <comment>property group</comment>
+  </data>
+  <data name="ExamplesDataArgumentDescription" xml:space="preserve">
+    <value>List of text or base 64 encoded image examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="ExamplesDataArgumentDisplayName" xml:space="preserve">
+    <value>Examples</value>
+    <comment>display name</comment>
+  </data>
+  <data name="ExplainResultsDescription" xml:space="preserve">
+    <value>Explanation of predictions for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="ExplainResultsDisplayName" xml:space="preserve">
+    <value>Prediction Explanations</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetExplanationsDescription" xml:space="preserve">
+    <value>Returns prediction explanations for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetExplanationsDisplayName" xml:space="preserve">
+    <value>Explain (Classification)</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetPredictionsDescription" xml:space="preserve">
+    <value>Returns classification predictions for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetPredictionsDisplayName" xml:space="preserve">
+    <value>Predict (Classification)</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PredictionResultsDescription" xml:space="preserve">
+    <value>Predictions for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="PredictionResultsDisplayName" xml:space="preserve">
+    <value>Predictions</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AnnotationResultsDescription" xml:space="preserve">
+    <value>Annotations for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="AnnotationResultsDisplayName" xml:space="preserve">
+    <value>Annotation Predictions</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetAnnotationsDescription" xml:space="preserve">
+    <value>Returns annotation predictions for given examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetAnnotationsDisplayName" xml:space="preserve">
+    <value>Predict (Annotations)</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveCollectionDescription" xml:space="preserve">
+    <value>Clears and deletes a custom collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveCollectionDisplayName" xml:space="preserve">
+    <value>Remove Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveDataDescription" xml:space="preserve">
+    <value>Removes example data from a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveDataDisplayName" xml:space="preserve">
+    <value>Remove Example Data</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveExamplesDescription" xml:space="preserve">
+    <value>List of examples to remove</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveExamplesDisplayName" xml:space="preserve">
+    <value>Examples</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RemoveSuccessDescription" xml:space="preserve">
+    <value>True if the removal was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="RemoveSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeregisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to not be shareable</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterCollectionDisplayName" xml:space="preserve">
+    <value>Unpublish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeregisterSuccessDescription" xml:space="preserve">
+    <value>Deregistration of collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeregisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionDescription" xml:space="preserve">
+    <value>Configures a collection to be sharable</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionDisplayName" xml:space="preserve">
+    <value>Publish Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDescription" xml:space="preserve">
+    <value>True if the collection should be publicly available</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterCollectionMakePublicDisplayName" xml:space="preserve">
+    <value>Make Public</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDescription" xml:space="preserve">
+    <value>Registeration collection complete</value>
+    <comment>description</comment>
+  </data>
+  <data name="RegisterSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeSuccessDescription" xml:space="preserve">
+    <value>True if the authorization was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserDescription" xml:space="preserve">
+    <value>Grant user permissions on a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserDisplayName" xml:space="preserve">
+    <value>Authorize User</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserEmailDisplayName" xml:space="preserve">
+    <value>User Email</value>
+    <comment>display name</comment>
+  </data>
+  <data name="AuthorizeUserEmailsDescription" xml:space="preserve">
+    <value>Email associated with the user account</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserPermissionDescription" xml:space="preserve">
+    <value>Which permission to grant</value>
+    <comment>description</comment>
+  </data>
+  <data name="AuthorizeUserPermissionDisplayName" xml:space="preserve">
+    <value>Permission</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeSuccessDescription" xml:space="preserve">
+    <value>True if the de-authorization was successful</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeAuthorizeSuccessDisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserDescription" xml:space="preserve">
+    <value>Revokes user permissions on a collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="DeAuthorizeUserDisplayName" xml:space="preserve">
+    <value>De-Authorize User</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserEmailDisplayName" xml:space="preserve">
+    <value>User Email</value>
+    <comment>display name</comment>
+  </data>
+  <data name="DeAuthorizeUserEmailsDescription" xml:space="preserve">
+    <value>Email associated with the user account</value>
+    <comment>description</comment>
+  </data>
+  <data name="FinetuneCollectionInfoDescription" xml:space="preserve">
+    <value>Returns info about the Finetune collection</value>
+    <comment>description</comment>
+  </data>
+  <data name="FinetuneCollectionInfoDisplayName" xml:space="preserve">
+    <value>Finetune Collection Info</value>
+    <comment>display name</comment>
+  </data>
+  <data name="FinetuneModelNameDescription" xml:space="preserve">
+    <value>Name of the finetune collection to interact with</value>
+    <comment>description</comment>
+  </data>
+  <data name="FinetuneModelNameDisplayName" xml:space="preserve">
+    <value>FinetuneCollection Name</value>
+    <comment>display name</comment>
+  </data>
+  <data name="GetFinetunePredictionsDescription" xml:space="preserve">
+    <value>Finetune predictions for the provided examples</value>
+    <comment>description</comment>
+  </data>
+  <data name="GetFinetunePredictionsDisplayName" xml:space="preserve">
+    <value>Finetune Predictions</value>
+    <comment>display name</comment>
+  </data>
+  <data name="LoadFinetuneCollectionDescription" xml:space="preserve">
+    <value>Loads a finetune collection into memory for use</value>
+    <comment>description</comment>
+  </data>
+  <data name="LoadFinetuneCollectionDisplayName" xml:space="preserve">
+    <value>Load Finetune Collection</value>
+    <comment>display name</comment>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+    <comment>category</comment>
+  </data>
+  <data name="PdfDataArgumentDescription" xml:space="preserve">
+    <value>URL or File Name</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfDataArgumentDisplayName" xml:space="preserve">
+    <value>PDF File</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfExtractedPagesDisplayName" xml:space="preserve">
+    <value>Extracted Pages</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PDFExtractionActivityDescription" xml:space="preserve">
+    <value>Extracts data from a PDF</value>
+    <comment>description</comment>
+  </data>
+  <data name="PDFExtractionActivityDisplayName" xml:space="preserve">
+    <value>PDF Extraction</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfExtractionDescription" xml:space="preserve">
+    <value>Extracts the text and tables from PDF documents</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfExtractionDisplayName" xml:space="preserve">
+    <value>Extract PDF</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfImagesFlagDescription" xml:space="preserve">
+    <value>Return metadata if available?</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfImagesFlagDisplayName" xml:space="preserve">
+    <value>Extract Images</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfMetadataFlagDescription" xml:space="preserve">
+    <value>Return all the images in the PDF file in PIL format?</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfMetadataFlagDisplayName" xml:space="preserve">
+    <value>Extract Metadata</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfMetadatasDisplayName" xml:space="preserve">
+    <value>PDF Metadata</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfOCRFlagDescription" xml:space="preserve">
+    <value>Proces document with OCR before extraction</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfOCRFlagDisplayName" xml:space="preserve">
+    <value>Use OCR?</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfSingleColumnDescription" xml:space="preserve">
+    <value>Treat contents as a single column</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfSingleColumnDisplayName" xml:space="preserve">
+    <value>Single Column</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfTablesFlagDescription" xml:space="preserve">
+    <value>Return the contents of tables in the document, separately from body text?</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfTablesFlagDisplayName" xml:space="preserve">
+    <value>Extract Tables</value>
+    <comment>display name</comment>
+  </data>
+  <data name="PdfTextFlagDescription" xml:space="preserve">
+    <value>Return all body text (separately from headers, footers, and tables)?</value>
+    <comment>description</comment>
+  </data>
+  <data name="PdfTextFlagDisplayName" xml:space="preserve">
+    <value>Extract Text</value>
+    <comment>display name</comment>
+  </data>
+</root>
