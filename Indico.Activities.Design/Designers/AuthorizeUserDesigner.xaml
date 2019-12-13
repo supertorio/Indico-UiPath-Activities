@@ -1,0 +1,53 @@
+﻿<sap:ActivityDesigner x:Class="Indico.Activities.Design.AuthorizeUserDesigner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+             xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+             xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+             xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+             xmlns:local="clr-namespace:Indico.Activities.Design"
+             xmlns:p="clr-namespace:Indico.Activities.Design.Properties"
+             xmlns:converters="clr-namespace:UiPath.Activities.Presentation.Converters">
+
+
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Themes\Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <converters:ActivityIconConverter x:Key="ActivityIconConverter" />
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush Stretch="Uniform" Drawing="{Binding Path=ModelItem, Converter={StaticResource ActivityIconConverter}, ConverterParameter=pack://application:\,\,\,/Indico.Activities.Design;component/themes/icons.xaml}" />
+    </sap:ActivityDesigner.Icon>
+
+    <local:ActivityDecoratorControl  HorizontalAlignment="Left" Style="{StaticResource ActivityDecoratorStyle}">
+        <DockPanel  Width="300">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Margin="5" Grid.Row="0" Grid.Column="0" Text="{x:Static p:Resources.ModelNameInput}"></TextBlock>
+                <sapv:ExpressionTextBox x:Name="ModelNameExpression" Margin="5" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static p:Resources.ModelNameInputHint}"
+                                    Expression="{Binding Path=ModelItem.CollectionName, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In, Mode=TwoWay}" />
+
+
+                <TextBlock Margin="5" Grid.Row="1" Grid.Column="0" Text="{x:Static p:Resources.UserEmailInput}"></TextBlock>
+                <sapv:ExpressionTextBox x:Name="UserEmailExpression" Margin="5" Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static p:Resources.UserInputHint}"
+                                    Expression="{Binding Path=ModelItem.UserEmail, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In, Mode=TwoWay}" />
+
+            </Grid>
+        </DockPanel>
+    </local:ActivityDecoratorControl>
+
+</sap:ActivityDesigner>
