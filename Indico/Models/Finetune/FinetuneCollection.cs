@@ -3,6 +3,7 @@ using System;
 
 namespace Indico.Models.Finetune
 {
+    [JsonObject()]
     public class FinetuneCollection
     {
         [JsonProperty(PropertyName = "class_names")]

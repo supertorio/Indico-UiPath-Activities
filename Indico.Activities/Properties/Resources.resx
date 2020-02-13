@@ -226,7 +226,7 @@
     <comment>description</comment>
   </data>
   <data name="CollectionInfoResultsDisplayName" xml:space="preserve">
-    <value>Collection Status</value>
+    <value>Collection Information</value>
     <comment>display name</comment>
   </data>
   <data name="TrainCollectionDescription" xml:space="preserve">
