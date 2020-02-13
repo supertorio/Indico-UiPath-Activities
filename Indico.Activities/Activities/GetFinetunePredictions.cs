@@ -25,7 +25,7 @@ namespace Indico.Activities
         [LocalizedDisplayName(nameof(Resources.PredictionResultsDisplayName))]
         [LocalizedDescription(nameof(Resources.PredictionResultsDescription))]
         [LocalizedCategory(nameof(Resources.Output))]
-        public OutArgument<List<Dictionary<string, float>>> Results { get; set; }
+        public OutArgument<List<List<FinetuneExtraction>>> Results { get; set; }
 
         protected override Task<List<List<FinetuneExtraction>>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken, Application client)
         {

@@ -214,7 +214,7 @@ namespace Indico.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Collection Status.
+        ///   Looks up a localized string similar to Collection Information.
         /// </summary>
         internal static string CollectionInfoResultsDisplayName {
             get {
